@@ -1,0 +1,232 @@
+    
+.boxBuyerInput
+    {
+         border: 2px solid #c3c3c3;
+         padding:15 0px;
+         display:inline;
+         font-size:20px;
+         min-width:100px;
+         width:100%;
+         text-align:center;
+    }
+    .dollarSign
+    {
+        position:absolute;
+        z-index:9999;
+        font-size:20px;
+        top:17px;
+        left:20px;
+    }
+    .showBorder
+    {
+        border:2px solid black;
+    }
+    i.stephen-icons
+    {
+         display: inline-block;
+          border-radius: 60px;
+          padding:10px;
+          margin-bottom:15px;
+          border: 2px solid #00a8e6;
+    }
+    .fa-money {
+      color: gray;
+    }
+    .fa-check
+    {
+        color:gray;
+    }
+    .button-add > img
+    {
+        height:40px;
+        width:40px;
+        margin-left:10px;
+        margin-top:-10px;
+    }
+     .stephen-nav-center {
+      text-align: center;
+    }
+    .stephen-nav-center ul.nav {
+      display: inline-block;
+      width:100%;
+    }
+    .stephen-nav-center ul.nav li {
+          display: inline-block;
+    float: none;
+    margin-left: 40px;
+    }
+    .stephen-nav-center ul.nav li a
+    {
+        font-size:18px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slide_down li
+    {
+        border-right:1px solid black;
+    }
+    div.text1 p
+    {
+        font-family: "AvenirNextLTW01-UltraLight";
+        font-size:18px ;
+        
+    }
+    div.text2 p
+    {
+        font-family: "AvenirNextLTW01-UltraLight";
+        font-size:18px ;
+        
+    }
+    div.text3 p
+    {
+        font-family: "AvenirNextLTW01-UltraLight";
+        font-size:18px ;
+        
+    }
+    a.button-add
+    {
+      border: 2px solid #CAA46B;
+      background-color: #cbab7a;
+      padding: 18px;
+      margin-left: -4px;
+      color: white;
+      font-weight: 500;
+      font-size: 18px;
+
+    }
+    a.button-add:hover
+    {
+      text-decoration: none;
+      background-color:#CAA46B;
+    }
+
+    .auth > a, p{ 
+
+            margin-top: 15px;
+            font-size: 20px;
+            color:black;
+            font-family: 'AvenirNextLTW01-UltraLight' !important; 
+            text-decoration: none;
+             
+    }
+
+
+    .modal {
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    border-radius: 0px;
+    margin: 0 auto;
+}
+
+.modal-fr > p{ 
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    color: black;
+    list-style-type: none;
+    font-weight: bolder;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    color: #000 !important;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;position: inherit;top: -15px !important;
+}
+.red{
+    color:red !important;
+}
+.red:hover, .red:focus{
+    color:#f52525 !important;
+}
+
+/*signup button*/
+.btn-sign-in{
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+    padding: 10px 30px !important; 
+    border-radius: 0px;
+    background-color: black;
+}
+
+.btn-sign-in:hover, .btn-sign-in:focus { 
+    background-color: #1b1919;
+}
+
+.btn-sign-in:active, .btn-sign-in:link { 
+    background-color: black !important;
+}
+
+.btn-sign-up{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    background-color: black;
+    border-radius: 0px;
+}
+.btn-sign-up:hover, .btn-sign-up:focus{
+    background-color: #1b1919;
+ }
+.btn-sign-up:active, .btn-sign-up:link{
+    background-color: black;
+ }
+.modal-sub-content{
+    padding: 0px 25px !important;
+    border-radius: 0px;
+}
+.font-light > label, .font-light{
+    
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+
+}
+.modal-custom-width{ 
+}
+.female-gender{
+   
+    margin-left: 15px;
+}
+
+.male-gender{ 
+    margin-right: 15px;
+}
+
+
+@media screen and ( max-width: 900px){
+    
+    .female-gender{
+        margin-left: 50px;
+    }
+
+    .male-gender{
+        margin-right: 50px;
+    }
+}
+
+
+
+@media screen and ( max-width: 600px){
+ 
+    .modal-custom-width{
+        width: 100%;
+    }
+    .female-gender{
+        margin-left: 50px;
+    }
+
+    .male-gender{
+        margin-right: 50px;
+    }
+
+ }
