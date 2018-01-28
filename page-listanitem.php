@@ -139,66 +139,73 @@ positioning-left
 	                </p>
 	            </div>   
 	            <!-- wki-stl colmn-padds1 colmn-padds -->
-	            <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12"  style="padding-left: 0px;">
-	                <div class="form-group">
-	                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Item/Collection Name</label>
-	                    <input type="text" class="form-control" id="item"> 
-	                </div>
 
-	                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv" style = "padding-right: 3px;">
-	                    <div class="form-group">
-	                        <label for="retail_value" class = "column-margnbotops margin-topbot" >Retail Value</label>
-	                        <input type="text" class="form-control" onkeyup="computeDays()" id="retail_value" value = "249">
-	                    </div>
-	                </div>
-	                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv " style = " padding-left: 3px;">
-	                    <div class="form-group">
-	                        <label  for="selling_price" class = "column-margnbotops margin-topbot">*Selling Price</label>
-	                        <input type="text" style = "cursor:auto" class="form-control" id="selling_price" value = "100">
-	                    </div>
-	                </div>
-	            </div>
-				
-				
-				
-				
-				 <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12"  style="padding-left: 0px;">
-	                <div class="form-group">
-	                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Brand/Designer</label>
-	                    <input type="text" class="form-control" id="brand"> 
-	                </div>
+	            <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12" style="padding: 0px">
 
-	                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv" style = "padding-right: 3px;">
-	                    <div class="form-group">
-	                        <label for="retail_value" class = "column-margnbotops margin-topbot" >offer Price</label>
-	                        <input type="text" class="form-control"  value = "1" id=""  value = "249">
-	                    </div>
-	                </div>
-	                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv " style = " padding-left: 3px;">
-	                    <div class="form-group">
-	                        <label  for="selling_price" class = "column-margnbotops margin-topbot">Age of Item </label>
-	                        <input type="text" style = "cursor:auto" class="form-control" value = "1" id="age_of_item" value = "100">
-	                    </div>
-	                </div>
-	            </div>
+
+		            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"  style="padding-left: 0px;">
+		                <div class="form-group">
+		                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Item/Collection Name</label>
+		                    <input type="text" class="form-control" id="item"> 
+		                </div>
+
+		                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv" style = "padding-right: 3px;">
+		                    <div class="form-group">
+		                        <label for="retail_value" class = "column-margnbotops margin-topbot" >Retail Value</label>
+		                        <input type="text" class="form-control" onkeyup="computeDays()" id="retail_value" value = "249">
+		                    </div>
+		                </div>
+		                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv " style = " padding-left: 3px;">
+		                    <div class="form-group">
+		                        <label  for="selling_price" class = "column-margnbotops margin-topbot">*Selling Price</label>
+		                        <input type="text" style = "cursor:auto" class="form-control" id="selling_price" value = "100">
+		                    </div>
+		                </div>
+		            </div>
+					 
+					
+					 <div class="col-lg-4  col-md-4 col-sm-6 col-xs-12 brand-designer"  style="padding-left: 0px;">
+		                <div class="form-group">
+		                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Brand/Designer</label>
+		                    <input type="text" class="form-control" id="brand"> 
+		                </div>
+
+		                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv" style = "padding-right: 3px;">
+		                    <div class="form-group">
+		                        <label for="retail_value" class = "column-margnbotops margin-topbot" >offer Price</label>
+		                        <input type="text" class="form-control"  value = "1" id=""  value = "249">
+		                    </div>
+		                </div>
+		                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv " style = " padding-left: 3px;">
+		                    <div class="form-group">
+		                        <label  for="selling_price" class = "column-margnbotops margin-topbot">Age of Item </label>
+		                        <input type="text" style = "cursor:auto" class="form-control" value = "1" id="age_of_item" value = "100">
+		                    </div>
+		                </div>
+		            </div>
+		 
 	 
- 
-				 <div class="col-lg-3  col-md-3 col-sm-12 col-xs-12" style="padding-left: 0px;">
-	                <div class="form-group">
-	                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Size</label>
-	                    <input type="text" class="form-control" id="size"> 
-	                </div>
+					 <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12" style="padding: 0px;">
+		                <div class="form-group">
+		                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Size</label>
+		                    <input type="text" class="form-control" id="size"> 
+		                </div>
 
-	                <div class="col-md-12 wki-rtv text-left" style = "padding-right: 3px;">
-	                    <div class="form-group">
-	                        <label class = "column-margnbotops" style=" margin:0px;text-align: left">Can this item be purchased new online??</label>
+		                <div class="col-md-12 wki-rtv text-left" style = "padding-right: 3px;">
+		                    <div class="form-group">
+		                        <label class = "column-margnbotops" style=" margin:0px;text-align: left">Can this item be purchased new online??</label>
 
-		                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font" id = "brn-cl1" rel = "brn-cl1">YES</button>
-		                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font btn-paddingLr" id = "brn-cl2" rel = "brn-cl2" >NO</button>
-	                    </div>
-	                </div> 
-	            </div>
-	 
+			                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font" id = "brn-cl1" rel = "brn-cl1">YES</button>
+			                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font btn-paddingLr" id = "brn-cl2" rel = "brn-cl2" >NO</button>
+		                    </div>
+		                </div> 
+		            </div>
+		 
+
+	            </div> 
+
+
+
         	</div>
 
 
@@ -211,8 +218,8 @@ positioning-left
         	<div class="clearfix">
 	            <div class="col-lg-2 col-md-3 col-xs-12 col-sm-12"  >
 	            </div>  
-	            <div class="col-lg-9  col-md-9 col-sm-12 col-xs-12 show-store-website colmn-padds1 colmn-padds " style = "display:none" >
-	                <div class="col-lg-12  col-md-0 col-sm-0 col-xs-0" style="padding-left: 0px">
+	            <div class="col-lg-10  col-md-9 col-sm-12 col-xs-12 show-store-website colmn-padds1 colmn-padds " style = "display:none" >
+	                <div class="col-lg-12  col-md-0 col-sm-0 col-xs-0" style="padding: 0px">
 		                <div class="form-group">
 		                    <label for="store_website" class = "column-margnbotops" style="margin-top: 0px;">Store Website</label>
 		                    <input type="text" class="form-control column-font" id="store_website" placeholder = "Enter the website the item is currently being sold at.">
@@ -315,8 +322,8 @@ positioning-left
         	<div class="clearfix" style="margin-bottom: 50px;">
 	            <div class="col-lg-2 col-md-3 col-xs-12 col-sm-12"  > 
 	            </div>   
-	            <div class="col-lg-9  col-md-9 col-sm-9 col-xs-12 colmn-padds1 colmn-padds" style="position: relative;top: 5px;" >
-	                <div class="col-lg-12  col-md-0 col-sm-0 col-xs-0" style="padding-left: 0px">
+	            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-12 colmn-padds1 colmn-padds" style="position: relative;top: 5px;" >
+	                <div class="col-lg-12  col-md-0 col-sm-0 col-xs-0" style="padding: 0px">
 		                <div class="form-group">
 							<label for="description" class = "column-margnbotops" style="margin-top: 0px;" >Item Additional Details</label>
 							<textarea class="form-control" rows="5" id="description"></textarea>

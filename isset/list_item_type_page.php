@@ -111,7 +111,7 @@
 			 	$womensIndex=0;
 				foreach ($newArg as $key => $value) {   
 					?>
-					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 " style="padding-left: 0px">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 " style="padding-left: 0px">
 				        <div class="view overlay hm-red-strong">
 				            <img src="<?php echo get_bloginfo('template_url');?>/img/clothing/<?php echo $value; ?>" class="img-fluid " alt="">
 				            <div class="mask flex-center waves-effect waves-light">

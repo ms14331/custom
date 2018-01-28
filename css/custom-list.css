@@ -985,6 +985,12 @@
 }
 
 @media (max-width: 991px){
+
+
+
+    .brand-designer{
+        padding-right: 0px;
+    }
     .wsh-width{
         width: 66.66666667% ;
     }
