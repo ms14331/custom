@@ -80,13 +80,7 @@ require_once('sub-header.php');// query
 											id = "imgsrcUnderreview<?php echo $counter ?>  " class="col-cetered1 opacity panelid<?php echo $i ?>" rel="panel<?php echo $i ?>" 
 											dapanelid = "panelid<?php echo $i ?>">
 										</div> 
-										
-										
-										
-										
-										
-										
-										
+										 
 										<input type ="text" id = "imgsrcUnderreview<?php echo $counter ?>" >
  
 										
@@ -631,7 +625,7 @@ require_once('sub-header.php');// query
 
 <!--                <img style="height:300px; width: 1110px; " src = "--><?php //echo get_bloginfo ( 'template_url'); ?><!--/img/gaukukh-nandanban-logo.jpg"  alt="...">-->
             </div>
-            <div class = "cover-pht-div clearfix" >
+            <div class = "cover-pht-div  " >
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 cover-pht-div-img clearfix">
                     <?php
 
@@ -1327,8 +1321,7 @@ require_once('sub-header.php');// query
                         </div>
                     <?php } ?>
 
-
-
+ 
 
                     <input type="hidden" id="adminforsaleCounter" value="<?php echo $adminforsaleCounteroutput; ?>" >
                 </div>
@@ -1337,6 +1330,13 @@ require_once('sub-header.php');// query
         </div>
     </div>
 
+
+
+
+        <div style = "clear:both"></div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <?php
 require_once('sub-footer.php');
 //?>

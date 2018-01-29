@@ -243,8 +243,7 @@ session_start();
                             <li style = "border-right:0px solid black !important;"><a href = 'update-account'>UPDATE ACCOUNT</a></li>
                     <?php
                         }else {
-                            ?>
-
+                            ?> 
                             <li><a href="http://lifeafterpurchase.com/landing-page/#what-consign2">EVENT INFO</a></li>
 
                             <li><a href="http://lifeafterpurchase.com/landing-page/#start-reducing2">HOW TO CONSIGN</a></li>
@@ -259,9 +258,7 @@ session_start();
 
                             <li><a href="http://lifeafterpurchase.com/landing-page/#con-shop-ven2">EVENT FAQ'S</a></li>
 
-                            <li style="border: none !important;"><a href="http://lifeafterpurchase.com/landing-page/#about-us2">ABOUT US</a></li>
-
-
+                            <li style="border: none !important;"><a href="http://lifeafterpurchase.com/landing-page/#about-us2">ABOUT US</a></li> 
                             <?php
                         }
                         ?> 

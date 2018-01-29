@@ -199,22 +199,10 @@ positioning-left
 			                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font btn-paddingLr" id = "brn-cl2" rel = "brn-cl2" >NO</button>
 		                    </div>
 		                </div> 
-		            </div>
-		 
-
-	            </div> 
-
-
-
+		            </div>  
+	            </div>  
         	</div>
-
-
-
-
-
-
-
-
+ 
         	<div class="clearfix">
 	            <div class="col-lg-2 col-md-3 col-xs-12 col-sm-12"  >
 	            </div>  
