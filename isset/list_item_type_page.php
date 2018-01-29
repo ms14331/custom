@@ -110,19 +110,25 @@
 				$newArg = array_slice($womenFiles ,2);
 			 	$womensIndex=0;
 				foreach ($newArg as $key => $value) {   
-					?>
-					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 " style="padding-left: 0px">
-				        <div class="view overlay hm-red-strong">
-				            <img src="<?php echo get_bloginfo('template_url');?>/img/clothing/<?php echo $value; ?>" class="img-fluid " alt="">
-				            <div class="mask flex-center waves-effect waves-light">
-				            	<p class="white-text"><?php echo $womenCaption1[$womensIndex]; ?></p>
-				            </div>
-				        </div>
-				        <div class="view-text white" >
-			    	 		<?php echo $womenCaption1[$womensIndex]; ?>
-			    		</div> 
-				    </div> 
-					<?php 
+
+
+
+						?>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 <?php 
+					if($womensIndex%3==2){ 
+echo 'modulo-of-3-item-type';
+					} ?> " style="padding-left: 0px">
+					        <div class="view overlay hm-red-strong">
+					            <img src="<?php echo get_bloginfo('template_url');?>/img/clothing/<?php echo $value; ?>" class="img-fluid " alt="">
+					            <div class="mask flex-center waves-effect waves-light">
+					            	<p class="white-text"><?php echo $womenCaption1[$womensIndex]; ?></p>
+					            </div>
+					        </div>
+					        <div class="view-text white" >
+				    	 		<?php echo $womenCaption1[$womensIndex]; ?>
+				    		</div> 
+					    </div> 
+						<?php 
 					$womensIndex++;
 				}   
 			 ?> 

@@ -53,7 +53,7 @@
 
 
 
-<div class = "container"> 
+<div class = "container list-item-container"> 
         <input type="hidden" id = "user_id" value="<?php echo $user_id; ?>">
         <input type="hidden" id = "fileDragDropUploadImg" value="<?php echo get_site_url(); ?>/fileDragDropUploadImg"> 
 	<div class="row"> 
@@ -143,7 +143,7 @@ positioning-left
 	            <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12" style="padding: 0px">
 
 
-		            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"  style="padding-left: 0px;">
+		            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 item-collection"  style="padding-left: 0px;">
 		                <div class="form-group">
 		                    <label for="item" class = "condition-qs column-margnbotops margin-topbot">*Item/Collection Name</label>
 		                    <input type="text" class="form-control" id="item"> 
