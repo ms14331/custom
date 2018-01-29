@@ -193,7 +193,7 @@ positioning-left
 
 		                <div class="col-md-12 wki-rtv text-left" style = "padding-right: 3px;">
 		                    <div class="form-group">
-		                        <label class = "column-margnbotops" style=" margin:0px;text-align: left">Can this item be purchased new online??</label>
+		                        <label class = "column-margnbotops" style="text-align: left">Can this item be purchased new online??</label>
 
 			                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font" id = "brn-cl1" rel = "brn-cl1">YES</button>
 			                    <button type="button" class="btn btn-primary btn-lg btn-color btnColor1 column-font btn-paddingLr" id = "brn-cl2" rel = "brn-cl2" >NO</button>

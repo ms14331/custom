@@ -111,13 +111,9 @@
 			 	$womensIndex=0;
 				foreach ($newArg as $key => $value) {   
 
-
-
+						
 						?>
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 <?php 
-					if($womensIndex%3==2){ 
-echo 'modulo-of-3-item-type';
-					} ?> " style="padding-left: 0px">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
 					        <div class="view overlay hm-red-strong">
 					            <img src="<?php echo get_bloginfo('template_url');?>/img/clothing/<?php echo $value; ?>" class="img-fluid " alt="">
 					            <div class="mask flex-center waves-effect waves-light">
@@ -129,6 +125,7 @@ echo 'modulo-of-3-item-type';
 				    		</div> 
 					    </div> 
 						<?php 
+					  
 					$womensIndex++;
 				}   
 			 ?> 
@@ -149,7 +146,7 @@ echo 'modulo-of-3-item-type';
 			 	$sbaIndex=0;
 				foreach ($sbaArg as $key => $value) {   
 					?>
-					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center view-container " >
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 text-center view-container " >
 				        <div class="view overlay hm-red-strong">
 				            <img src="<?php echo get_bloginfo('template_url');?>/img/shoes/<?php echo $value; ?>" class="img-fluid " alt="">
 				            <div class="mask flex-center waves-effect waves-light">
@@ -185,7 +182,7 @@ echo 'modulo-of-3-item-type';
 			 	$homeIndex=0;
 				foreach ($homeArg as $key => $value) {   
 					?>
-					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 view-container"  >
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 view-container"  >
 				        <div class="view overlay hm-red-strong"  >
 				            <img src="<?php echo get_bloginfo('template_url');?>/img/homes/<?php echo $value; ?>" class="img-fluid " alt="">
 				            <div class="mask flex-center waves-effect waves-light">
