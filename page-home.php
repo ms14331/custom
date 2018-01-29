@@ -3,20 +3,25 @@
  * Template Name: home
  */ 
 require_once('sub-header.php');// query
-//$under_review= $wpdb->get_row( "SELECT count(*) FROM wp_item WHERE ID = 40", ARRAY_A );
-$user_status_id = $_SESSION['user_status'];
-$user_id = $_SESSION['user_id'];
+// //$under_review= $wpdb->get_row( "SELECT count(*) FROM wp_item WHERE ID = 40", ARRAY_A );
+// $user_status_id = $_SESSION['user_status'];
+// $user_id = $_SESSION['user_id'];
 
 ?>
-<!-- Bootstrap Core CSS -->
-    <link href="<?php echo  bloginfo("template_url") ?>/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Core CSS 
+    <link href="<?php //echo  bloginfo("template_url") ?>/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
     <!-- Custom CSS -->
+
+
+
+    
+</div>
     <link href="http://lifeafterpurchase.com/wp-content/themes/custom/css/bootstrap/css/simple-sidebar.css" rel="stylesheet"> 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="<?php echo JS; ?>/profilePop-up.js"></script>
     <script src="<?php echo JS; ?>/profileContent.js"></script>
-    <div class="container" >
+    <div class="container" style=" padding-right: 0px;">
 
         <input type="hidden" id = "profilePop" value="<?php echo get_site_url(); ?>/profilepop-up">
 
@@ -43,49 +48,25 @@ $user_id = $_SESSION['user_id'];
                             <form role="form" style = "margin: 0px">
                                 <div  class="col-lg-4 col-md-6 col-sm-6 col-xs-12 colmn-padds review-image-popup" >
                                     <div class="texts1" >
-									<!--	
-                                        <img  style="margin:auto;width: 253px; display:none" class="imgsrcUnderreview1 panel1 active-tabUnderReview" alt="...">
-                                        <img  style="margin:auto;width: 253px; display:none" class="imgsrcUnderreview2 panel2 " alt="...">
-                                        <img  style="margin:auto;width: 253px; display:none" class="imgsrcUnderreview3 panel3 " alt="...">
-                                        <img  style="margin:auto;width: 253px; display:none" class="imgsrcUnderreview4 panel4 " alt="...">
-                                    -->
-									 <?php
-									 
-									 
+						 
+                                        <?php 
+                                        for($i = 1 ; $i < 6; $i++){ 
+                                        ?>
 										
-											for($i = 1 ; $i < 6; $i++){
-												  
-											
-									 ?>
-										
-										<div style="margin:auto;display:none;position: relative; width:  94%;
-											height: 312px;background-position: 50% 50%;
-											background-repeat:   no-repeat;background-size:cover;"  
-											id = "imgsrcUnderreview<?php echo $i?>"
-											class="panel<?php echo $i?> <?php if($i == 1){?>active-tabUnderReview<?php }?>" >
-										</div>
-										 
-										
-										<?php
-										
-										
+    										<div style="margin:auto;display:none;position: relative; width:  94%;
+    											height: 312px;background-position: 50% 50%;
+    											background-repeat:   no-repeat;background-size:cover;"  
+    											id = "imgsrcUnderreview<?php echo $i?>"
+    											class="panel<?php echo $i?> <?php if($i == 1){?>active-tabUnderReview<?php }?>" >
+    										</div> 
+										<?php 
 										}
 										
-										?>
-										
-										 
-									</div>
-									
-									
-									
-									
-									
-									
-									
+										?> 
+									</div> 
 									
                                     <div style = "text-align:center" class=" texts1 review-padds clicktabUnderReview">
-                                       
-										
+                                        
 										<?php 
 											$counter = 5; 
 											
@@ -620,7 +601,7 @@ $user_id = $_SESSION['user_id'];
 
         <div class="form-group">
 
-            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 cover-photo-dev" style="margin-bottom: -125px;" >
+            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 cover-photo-dev" style="margin-bottom: -125px;padding-left: 0px" >
                 <?php
                 global $wpdb;
                 $name_cp_profile = "";
@@ -635,13 +616,13 @@ $user_id = $_SESSION['user_id'];
                 if($name_cp_profile == "") {
                     ?>
 
-                    <img class="oldImageCoverIcon" style = "height:350px; width: 1110px; border: 1px solid black;" src = "<?php echo get_bloginfo ( 'template_url'); ?>/img/gaukukh-nandanban-logo.jpg"  alt="...">
+                    <img class="oldImageCoverIcon" src = "<?php echo get_bloginfo ( 'template_url'); ?>/img/gaukukh-nandanban-logo.jpg"  alt="...">
                     <?php
 
                 }else{
                     ?>
 
-                    <img class="oldImageCoverIcon" style = "height:350px; width: 1110px; border: 1px solid black;" id="oldImageCoverIcon" src = "<?php echo get_bloginfo ( 'template_url'); ?>/images/cp_uploads/<?php echo $name_cp_profile?>"  alt="...">
+                    <img class="oldImageCoverIcon" id="oldImageCoverIcon" src = "<?php echo get_bloginfo ( 'template_url'); ?>/images/cp_uploads/<?php echo $name_cp_profile?>"  alt="...">
 
 
                     <?php
@@ -650,9 +631,12 @@ $user_id = $_SESSION['user_id'];
 
 <!--                <img style="height:300px; width: 1110px; " src = "--><?php //echo get_bloginfo ( 'template_url'); ?><!--/img/gaukukh-nandanban-logo.jpg"  alt="...">-->
             </div>
-            <div class = "cover-pht-div" >
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12  cover-pht-div-img"  >
+            <div class = "cover-pht-div clearfix" >
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 cover-pht-div-img clearfix">
                     <?php
+
+
+                    
                     global $wpdb;
                     $name_uc_profile = "";
                         $oldImageProfileIcon =  $wpdb->get_results("SELECT * FROM wp_profile WHERE user_id = '" . $user_id . "' ORDER BY ID ASC ", ARRAY_A);
@@ -665,18 +649,22 @@ $user_id = $_SESSION['user_id'];
                     <?php
                     if($name_uc_profile == ""){
                         ?>
-                        <img class="oldImageProfileIcon" style = "width: 50%;border: 1px solid black;height:50%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/Balenciaga.jpg" alt="...">
+                        <img class="oldImageProfileIcon"   src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/avatar/profile.png" alt="...">
                         <?php
                     }else{
                         ?>
-                        <img class="oldImageProfileIcon" style = "width: 50%;border: 1px solid black;height:50%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/images/uc_uploads/<?php echo $name_uc_profile?>" id="oldImageProfileIcon1" alt="...">
+                        <img class="oldImageProfileIcon" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/images/uc_uploads/<?php echo $name_uc_profile?>" id="oldImageProfileIcon1" alt="...">
                         <?php
                     }
                     ?>
 <!--                    <img  src = "--><?php //echo get_bloginfo ( 'template_url' ); ?><!--/img/Balenciaga.jpg" alt="...">-->
 
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 cover-p-name" style="position: relative;top: 20px;left: 50px;" >
+
+
+
+
+                <div class="col-lg-5 col-md-7 col-sm-7 col-xs-12 cover-p-name clearfix"   >
 
                     <?php
                     $user_nicename = "";
@@ -685,14 +673,20 @@ $user_id = $_SESSION['user_id'];
                     foreach($profileImage as $val21){
                         echo "<h1>". $user_nicename =  $val21['user_nicename'].'</h1>';
                     }
-                    ?>
 
+                    ?>
+                    <h1>LIFE AFTER PURCHASE</h1>
                     <h4>PROFIT SINCE 6/20/2016<br>$7,218</h4>
                 </div>
             </div>
 
+
+
             <input type = "hidden" value="<?php echo $user_status_id ?>" id="user_status_id">
-            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 sub-menuBar "  >
+
+
+
+            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 sub-menuBar clearfix" style="padding-left: 0px;" >
                 <!-- start menu  -->
                 <div class=" navigation rev-navigation colmn-padds1" id="sticker"><!-- navigation menu-->
                     <ul class=" menu-bars clicking-menu-profile" style = "display: block !important;">
@@ -1340,7 +1334,7 @@ $user_id = $_SESSION['user_id'];
                 </div>
 
             </div>
-        </div>s
+        </div>
     </div>
 
 <?php

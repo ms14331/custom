@@ -212,7 +212,7 @@ session_start();
         </div>
     </div>
 
-	<div class="">   
+	<div class="">   -->
 		<!--this is the class uk-container uk-container-center content fix-height-->
 
 </div>
@@ -264,11 +264,7 @@ session_start();
 
                             <?php
                         }
-                        ?>
-
-
-
-
+                        ?> 
 				</ul>
 
 			</div>

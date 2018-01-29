@@ -324,6 +324,27 @@
     font-size: 20px;
 }
 /*this is cover photo css*/
+.cover-photo-dev > img{
+    height:350px; 
+    width: 100%; 
+    border: 1px solid black;
+}
+
+
+.cover-pht-div-img{
+    padding-left: 0px; 
+    margin-top: 0px;
+}
+.oldImageProfileIcon{ 
+    width: 50%;
+    border: 1px solid black;
+    height:50%
+}
+
+.cover-p-name{
+    position: relative;
+    left: 50px;
+}
 .cover-p-name h1, h4{
     font-weight: bolder;
     font-weight: 900px;
@@ -876,17 +897,7 @@
         left: 60px;
         
     }
-
-
-
-
-
-
-
-
-
-
-
+ 
 }
 
    
@@ -1056,7 +1067,18 @@
 
 }
 @media (max-width: 767px){ 
+    .cover-pht-div-img{ 
+        margin-top: 144px;
+    }
+    .oldImageProfileIcon{
+        width: 200px; 
+    }
 
+    .cover-p-name{
+        position: relative;
+        left: 0px;  
+        color: black;
+    }   
     
     .border-col-item-type{
         width: 100%;
@@ -1293,7 +1315,7 @@
 }
 @media (max-width: 377px){
     .sub-menuBar{
-        margin-top: -80px !important;
+        /*margin-top: -80px !important;*/
     }
     .cover-p-name h1,.cover-p-name h4{
         font-size:18px !important;
@@ -1321,6 +1343,9 @@
 }
 /*this is for iphone6*/
 @media (max-width: 375px) {
+    .sub-menuBar{
+            margin-top: -140px !important;
+    }
     .hm-b{
 
         padding: 10px 89px !important;
@@ -1348,13 +1373,14 @@
     }
 
     .cover-photo-dev > img {
-        display: none;
+        /*display: none;*/
+        height: 230px;
     }
 
-    .cover-pht-div-img {
-        position: relative;
-        top: 140px;
-        text-align: left;
+    .cover-pht-div-img { 
+        /*top: 140px;*/
+        text-align: center;
+        padding-left: 0px !important;
     }
 
     .review-image-popup {
@@ -1365,6 +1391,7 @@
         color: #000 !important;
         position: static !important;
         padding: 0px;
+        padding-left: 0px;
     }
 
     .titleLabelPopup {
@@ -1373,7 +1400,7 @@
 
     .cover-p-name h1, .cover-p-name > h4 {
         font-size: 14px !important;
-        margin-left: 50%;
+        margin-left: 0%;
     }
 
     .colmn-padds1 {/*many class*/
