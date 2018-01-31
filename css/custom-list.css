@@ -1079,7 +1079,9 @@
         left: 0px;  
         color: black;
     }   
-    
+    .cover-p-name > h1{ 
+        font-size: 30px;
+    }   
     .border-col-item-type{
         width: 100%;
     }
@@ -1296,6 +1298,24 @@
     }
 
 }
+
+@media (max-width: 423px){
+
+    .cover-p-name h1{
+        font-size: 30px;
+    }
+
+    .cover-photo-dev > img{
+            height: 217px !important;
+            border:0px !important;
+    }
+    .oldImageProfileIcon{
+        width: 140px;
+    }
+    
+
+}
+
 @media (max-width: 449px){
     /**header.php**/
     .afterPurchase h1{
