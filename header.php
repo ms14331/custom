@@ -2,6 +2,7 @@
 //    if(!session_id()) {
 //        session_start();
 //    }
+
 session_start();
 
 ?>
@@ -226,6 +227,8 @@ session_start();
 </div>
 </div> 
 
+ 
+
         <div class="uk-grid uk-grid-collapse">
             <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 afterPurchase head-pad-top">
 				<a href="<?php echo SITEURL; ?>"><h1 class = "column-header-logo" style = "margin-top: 0px;/*font-size: 75px;*/"><b>LIFE AFTER</b> PURCHASE</h1></a>
@@ -233,10 +236,66 @@ session_start();
 			</div>
 			<!-- end of uk width 1-1 -->
            
+               <div class="nav-cart-wrapper">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <div class="menu-toggle hide"> <i class="fa fa-navicon"> </i> </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'edigital_primary', 'menu_id' => 'primary-menu' ) ); ?>
+                </nav><!-- #site-navigation -->
+
+                <div class="header-search-wrapper">
+                    <span class="search-main"><i class="fa fa-search"></i></span>
+                    <div class="search-form-main clearfix">
+                        <div class="close"> <i class="fa fa-close"> </i> </div>
+                        <?php get_search_form(); ?>
+                    </div>
+                </div><!-- .header-search-wrapper -->
+    
+                <?php if( class_exists( 'Easy_Digital_Downloads' ) ) { ?>
+                    <span id="edigital-header-cart">
+                        <a href="<?php echo edd_get_checkout_uri(); ?>">
+                            <i class="fa fa-cart-arrow-down"></i> 
+                            <span class="header-cart edd-cart-quantity"><?php echo intval( edd_get_cart_quantity() ); ?></span>
+                        </a>
+                    </span>
+                <?php } ?>
+            </div>
+
+
 			<div class="navigation" id="sticker"><!-- navigation menu -->
+
+
+
                  <div class="title-collapse"><p><b>LIFE AFTER</b> PURCHASE</p></div><div  id="icons"><span class="glyphicon glyphicon-align-justify"></span></div>
 				<div class="clear"></div> 
-                <ul class="slide_down menu-bars" style = "    padding: 12px !important; background-color: #000;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <ul class="slide_down menu-bars" style = "padding: 12px !important; background-color: #000;">
 
                     <?php
 
@@ -266,21 +325,61 @@ session_start();
                             <li><a href="con-shop-ven2">EVENT FAQ'S</a></li>
 
                             <li style="border: none !important;"><a href="http://lifeafterpurchase.com/landing-page/#about-us2">ABOUT US</a></li>
-
-
+ 
                             <?php
                         }
-                        ?>
-
-
-
-
+                        ?>  
 				</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			</div>
 
 		</div><!-- end of life after purchase -->
 	</div>	
-
-
+ 
     <div class="container">
+ 
+<?php wp_footer(); ?>
