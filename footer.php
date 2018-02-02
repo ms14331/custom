@@ -474,7 +474,7 @@ if(jq('#frmConsign .male_box input[type=checkbox]').prop( "checked" )){
 
     if(jq(window).width() < 768)
     {
-          jq('.slide_down').hide();
+       jq('.slide_down').hide();
     }
    jq(window).resize(function(){
         if (jq(window).width() > 768){  
@@ -482,12 +482,15 @@ if(jq('#frmConsign .male_box input[type=checkbox]').prop( "checked" )){
             jq('div.title-collapse').hide();
         }  
         else{
-             jq('.slide_down').hide();
+            // jq('.slide_down').hide();
         } 
     });
 
     jq('#icons').click(function(){
-        jq('.slide_down').slideToggle(200);
+    jq('.slide_down').slideToggle(200);
+    //    jq('.slide_down').css({
+      //  	'width': '70% !important'
+        //});
 
     });
 

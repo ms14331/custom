@@ -23,6 +23,10 @@ session_start();
     <script src="<?php echo JS; ?>/custom-michael.js"></script>
     <script src="<?php echo JS; ?>/bootstrap.min.js"></script>
     <?php wp_head(); ?>
+
+    <style type="text/css">
+        
+    </style>
 </head>
 <body>
 <div id="mainWrapper">
@@ -257,45 +261,27 @@ session_start();
                             <span class="header-cart edd-cart-quantity"><?php echo intval( edd_get_cart_quantity() ); ?></span>
                         </a>
                     </span>
-                <?php } ?>
+                <?php } 
+
+
+                 ?>
             </div>
 
 
-			<div class="navigation" id="sticker"><!-- navigation menu -->
+			<div class="navigation" id="sticker"><!-- navigation menu --> 
+
+                 <div class="title-collapse"> 
+                    <p>
+                        <b>
+                            LIFE AFTER
+                        </b> 
+                        PURCHASE
+                    </p>
+                    </div>
 
 
 
-                 <div class="title-collapse"><p><b>LIFE AFTER</b> PURCHASE</p></div><div  id="icons"><span class="glyphicon glyphicon-align-justify"></span></div>
-				<div class="clear"></div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-                <ul class="slide_down menu-bars" style = "padding: 12px !important; background-color: #000;">
+                <ul class="slide_down menu-bars panel1-menu" style = "background-color: #000;display: block !important; ">
 
                     <?php
 
@@ -332,54 +318,30 @@ session_start();
 				</ul>
 
 
+                    <div  id="icons" rel="panel1-menu">
+                        <span class="glyphicon glyphicon-align-justify">
+                            
+                        </span>
+                    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <script type="text/javascript">
+                        $(document).ready(function(){ 
+                            $('#icons').click(function(){ 
+                                var data = $(this).attr('rel'); 
+                                 $('.'+data).addClass('swipe-right-width');  
+                                $(this).css({
+                                    'margin-right': '70%', 
+                                    '-webkit-transition': 'margin-right 1s', /* Safari */
+                                    'transition': 'margin-right 1s'
+                                });
+                            });
+                        });
+                    </script>
+ 
 
 			</div>
 
 		</div><!-- end of life after purchase -->
 	</div>	
  
-    <div class="container">
- 
-<?php wp_footer(); ?>
+    <div class="container"> 

@@ -253,6 +253,9 @@ if(jq('#frmConsign .male_box input[type=checkbox]').prop( "checked" )){
       jq(this).next().stop().slideToggle('fast');
     return false;
     });   
+
+
+    
     // navigation menu smooth effects
     jq('.slide_down li a').click(function(){  
         //detect nia daan ang scrollTopp or position sa browser\

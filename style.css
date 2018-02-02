@@ -111,6 +111,10 @@ Version: 1.0 */
         margin: 0;
         box-sizing: border-box;
 }
+.slide_down{
+	padding: 12px; 
+	background-color: #000;
+}
 .select-style select
 {
 	    display: inline-block;
@@ -1048,6 +1052,7 @@ article h4{
 
 @media screen and (max-width: 768px) {
 
+
 	.border-top {
 
 	    border-bottom: 1px solid #000;
@@ -1070,7 +1075,7 @@ article h4{
 
 	    cursor: pointer;
 
-	    display: block;
+	    display: inline-block;
 
 	    float: right;
 
@@ -1131,13 +1136,31 @@ article h4{
 	    padding: 12px;
 
 	}
+	.nav-width{  
+	} 	
+	/*#icon{ 
 
-	ul.slide_down{
-
-		width: 100%;
-
+ 	}
+	ul.slide_down{ 
+		width: 0px;
+		position: absolute;
+		right: 0px;
+		padding: 0px !important;
+		display: inline-block !important;
+		float: right; 
 		margin-top: 12px;
+		transition:width 0.1s;
+	}
 
+
+ 
+	ul.swipe-right-width{
+
+		width: 70% !important ;  
+	    -webkit-transition: width 1s; 
+	    transition: width 1s;
+	}*/
+	ul.slide_down > li{  
 	}
 
 	.row.buy p{
