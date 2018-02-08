@@ -243,8 +243,7 @@ if(jq('#frmConsign .male_box input[type=checkbox]').prop( "checked" )){
     });
 
     jq('#icons').click(function(){
-        jq('.slide_down').slideToggle(200);
-
+        jq('.slide_down').slideToggle(200); 
     });
 
 // tooggle text

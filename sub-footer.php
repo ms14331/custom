@@ -352,8 +352,7 @@ jq(document).ready(function(){
     });
 
     jq('#icons').click(function(){
-        jq('.slide_down').slideToggle(200);
-
+        jq('.slide_down').slideToggle(200); 
     });
 
 // tooggle text

@@ -316,7 +316,7 @@ h4.strt-reducing{
     font-weight: bolder;
     border: none !important;
     display: -webkit-inline-box;
-    border-right: 1px solid white !important;
+    border-right: 1px solid white;
 }
 
 footer > div.footer-div1{

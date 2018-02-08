@@ -163,15 +163,7 @@
 			 ?> 
 		</div>
 
-
-
-
-
-
-
-
-
-
+ 
 
 		<div  style = "display:none" class = "btn-wn3">  
 			 <?php 

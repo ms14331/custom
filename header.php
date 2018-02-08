@@ -317,25 +317,25 @@ session_start();
                         ?>  
 				</ul>
 
-
+<!-- 
                     <div  id="icons" rel="panel1-menu">
                         <span class="glyphicon glyphicon-align-justify">
                             
                         </span>
-                    </div>
+                    </div> -->
 
                     <script type="text/javascript">
-                        $(document).ready(function(){ 
-                            $('#icons').click(function(){ 
-                                var data = $(this).attr('rel'); 
-                                 $('.'+data).addClass('swipe-right-width');  
-                                $(this).css({
-                                    'margin-right': '70%', 
-                                    '-webkit-transition': 'margin-right 1s', /* Safari */
-                                    'transition': 'margin-right 1s'
-                                });
-                            });
-                        });
+                        // $(document).ready(function(){ 
+                        //     $('#icons').click(function(){ 
+                        //         var data = $(this).attr('rel'); 
+                        //          $('.'+data).addClass('swipe-right-width');  
+                        //         $(this).css({
+                        //             'margin-right': '70%', 
+                        //             '-webkit-transition': 'margin-right 1s', /* Safari */
+                        //             'transition': 'margin-right 1s'
+                        //         });
+                        //     });
+                        // });
                     </script>
  
 
