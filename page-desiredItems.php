@@ -15,9 +15,12 @@
 	.active-sub-desired-item{
 		display: block !important;
 	} 
+	.active-sub-desired-items-now{
+		display: block !important;
+	}
 
 </style>
-<br><br> 
+<br>
 	<div class = " "> 
 		<p style="text-align: center;">
 			<strong>
@@ -65,19 +68,29 @@
 
 			
  			if(data == "women-desired"){
-				$('#wcasual').addClass('active-sub-desired-item');
- 			}else if(data=="men-desired"){
-				$('#mcasual').addClass('active-sub-desired-item');
+
+ 				$('.active-sub-desired-items-now').removeClass('active-sub-desired-items-now');
+				$('#wcasual').addClass('active-sub-desired-items-now'); 
+ 			}else if(data=="men-desired"){ 
+ 
+
+ 				$('.active-sub-desired-items-now').removeClass('active-sub-desired-items-now');
+				$('#mcasual').addClass('active-sub-desired-items-now'); 
  			}else if(data="home-desired"){
-				$('#bedding').addClass('active-sub-desired-item');
+				
+
+ 				$('.active-sub-desired-items-now').removeClass('active-sub-desired-items-now');
+				$('#bedding').addClass('active-sub-desired-items-now'); 
  			} 
 
 
- 		}); 
-		$('.w-women').click(function(){
+ 		});  
+
+		$('.sub-menu-clickable').click(function(){
 			var data = $(this).attr('rel'); 
-			$('.active-sub-desired-item').removeClass('active-sub-desired-item');
-			$('#'+data).addClass('active-sub-desired-item');
+			$('.active-sub-desired-items-now').removeClass('active-sub-desired-items-now');  
+			$('#'+data).addClass('active-sub-desired-items-now');
+
 
 		}); 
 	});
@@ -108,22 +121,22 @@
 					<div class="col-sm-13 women-chic active-desired-item not-active-desired-item "  id = "women-desired" >
 						<ul class = "w-lu-dsired2"  >
 							<li>
-								<a class = "casual-desired w-women" rel="wcasual">
+								<a class = "casual-desired w-women sub-menu-clickable" rel="wcasual">
 									CASUAL
 								</a>
 							</li>
 							<li>
-								<a class = "chic-desired w-women" rel="chic">
+								<a class = "chic-desired w-women sub-menu-clickable" rel="chic">
 									CHIC
 								</a>
 							</li>
 							<li>
-								<a class = "preppy-desired w-women" rel="wpreppy">
+								<a class = "preppy-desired w-women sub-menu-clickable" rel="wpreppy">
 									PREPPY
 								</a>
 							</li>
 							<li>
-								<a class = "streetwear-desired w-women" rel="wstreet-wear">
+								<a class = "streetwear-desired w-women sub-menu-clickable" rel="wstreet-wear">
 									STREETWEAR
 								</a>
 							</li> 
@@ -133,22 +146,22 @@
 					<div class="col-sm-13 mens-wear not-active-desired-item" id = "men-desired">
 						<ul class = "w-lu-dsired2"  >
 							<li>
-								<a class = "casual-desired2 w-women"  rel="mcasual">
+								<a class = "casual-desired2 w-women sub-menu-clickable"  rel="mcasual">
 									CASUAL
 								</a>
 							</li>
 							<li>
-								<a class = "menswear-desired w-women" rel="menswear">
+								<a class = "menswear-desired w-women sub-menu-clickable" rel="menswear">
 									MENSWEAR
 								</a>
 							</li>
 							<li>
-								<a class = "preppy-desired2 w-women" rel="mpreppy">
+								<a class = "preppy-desired2 w-women sub-menu-clickable" rel="mpreppy">
 									PREPPY
 								</a>
 							</li>
 							<li>
-								<a class = "streetwear-desired2 w-women" rel="mstreet-wear">
+								<a class = "streetwear-desired2 w-women sub-menu-clickable" rel="mstreet-wear">
 									STREETWEAR
 								</a>
 							</li> 
@@ -158,22 +171,22 @@
 					<div class="col-sm-13 home-decor not-active-desired-item" id = "home-desired" >
 						<ul class = "w-lu-dsired2"  >
 							<li>
-								<a class = "bedding-desired w-women"  rel="bedding">
+								<a class = "bedding-desired w-women sub-menu-clickable"  rel="bedding">
 									BEDDING
 								</a>
 							</li>
 							<li>
-								<a class = "decor-desired w-women"  rel="decor">
+								<a class = "decor-desired w-women sub-menu-clickable"  rel="decor">
 									DECOR
 								</a>
 							</li>
 							<li>
-								<a class = "denning-desired w-women"  rel="dinning">
+								<a class = "denning-desired w-women sub-menu-clickable"  rel="dinning">
 									DINNING
 								</a>
 							</li>
 							<li>
-								<a class = "furniture-desired w-women"  rel="furniture">
+								<a class = "furniture-desired w-women sub-menu-clickable"  rel="furniture">
 									FURNITURE
 								</a>
 							</li> 
@@ -181,7 +194,13 @@
 					</div>      
 				</div>
 		</div>   
+
 <?php
 	require_once('isset/desired-items.php');
+
+?>
+
+
+<?php
  	require_once('sub-footer.php');
 ?>

@@ -101,7 +101,7 @@
 
  
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item active-sub-desired-item" id="wcasual" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item active-sub-desired-items-now" id="wcasual" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -130,11 +130,7 @@
     </div>
 
 
-
-
- 
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="chic" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="chic" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -165,7 +161,7 @@
 
 
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="wpreppy" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="wpreppy" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -195,7 +191,7 @@
 
 
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="wstreet-wear" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="wstreet-wear" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -225,7 +221,7 @@
 
  
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="mcasual" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="mcasual" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -254,7 +250,7 @@
     </div>
  
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="menswear" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="menswear" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -284,7 +280,7 @@
  
 
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="mpreppy" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="mpreppy" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -313,7 +309,7 @@
     </div>
  
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="mstreet-wear" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="mstreet-wear" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -341,7 +337,7 @@
         </div> 
     </div>
  
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="bedding" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="bedding" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -369,7 +365,7 @@
         </div> 
     </div> 
  
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="decor" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="decor" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -399,7 +395,7 @@
 
 
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="dinning" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="dinning" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -428,7 +424,7 @@
     </div> 
 
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-centerclearfix border-col-item-type not-active-desired-item" id="furniture" style="padding-left: 0px; padding-right: 0px" > 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-centered text-center clearfix border-col-item-type not-active-desired-item" id="furniture" style="padding-left: 0px; padding-right: 0px" > 
         
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
@@ -456,6 +452,13 @@
                 }   
              ?> 
         </div> 
+
     </div>
 
 
+ 
+    <div class="col-sm-4 col-md-offset-4 clearfix"  style="margin-bottom:  50px;">
+        <a href="new-consign" class = "footer-cosign-des" >
+            COSIGN NOW
+        </a>
+    </div>  
