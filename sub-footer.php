@@ -351,7 +351,8 @@ jq(document).ready(function(){
         }
     });
 
-    jq('#icons').click(function(){
+    jq('#icons').click(function(){  
+
         jq('.slide_down').slideToggle(200); 
     });
 

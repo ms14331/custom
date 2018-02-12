@@ -37,11 +37,8 @@ session_start();
     <input type="hidden" id = "dataBaser" value="<?php  echo get_site_url(); ?>/database">
     <input type="hidden" id = "fileDragUpload" value="<?php echo get_site_url(); ?>/filedragupload">
     <input type="hidden" id = "listanitem" value="<?php echo get_site_url(); ?>/listanitem">
+ 
 
-
-
-    
-    
 	<div class="top-info" style = "padding: 0px 0px; display:block;background-color: white">
         <div class='container'>
         <!--this is for sign up--> 
@@ -232,7 +229,7 @@ session_start();
                  <div class="title-collapse"><p><b>LIFE AFTER</b> PURCHASE</p></div><div  id="icons"><span class="glyphicon glyphicon-align-justify"></span></div>
 				<div class="clear"></div> 
 
-                <ul class="slide_down menu-bars clearfix" style = "margin-top: -16px;padding: 12px !important; background-color: #000;">
+                <ul class="slide_down menu-bars clearfix" style = "margin-top: 2px;padding: 12px !important; background-color: #000;">
                     <?php 
                         if( is_page( array( 'listanitem', 'home', 'update-account' ))){ ?>
 
@@ -269,12 +266,7 @@ session_start();
 		</div><!-- end of life after purchase --> 
 
     </div>
-
-
-
-
-
-
+ 
         <div class="container">
            
 

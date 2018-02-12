@@ -1138,31 +1138,7 @@ article h4{
 
 	}
 	.nav-width{  
-	} 	
-	/*#icon{ 
-
- 	}
-	ul.slide_down{ 
-		width: 0px;
-		position: absolute;
-		right: 0px;
-		padding: 0px !important;
-		display: inline-block !important;
-		float: right; 
-		margin-top: 12px;
-		transition:width 0.1s;
-	}
-
-
- 
-	ul.swipe-right-width{
-
-		width: 70% !important ;  
-	    -webkit-transition: width 1s; 
-	    transition: width 1s;
-	}*/
-	ul.slide_down > li{  
-	}
+	} 	 
 
 	.row.buy p{
 

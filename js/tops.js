@@ -1,5 +1,15 @@
 
 
+
+//Update account jquery
+var genderUpdate;
+$(function () {
+    var $j = jQuery.noConflict();
+    $j(".gender").on('change touchstart', function(){   
+ 
+        genderUpdate = $j(this).val();
+    });
+});
  
 
 
@@ -36,7 +46,7 @@ var listanitem ="";
 
          $j = jQuery.noConflict();
         fileDragUpload = document.getElementById('fileDragUpload').value;
-        var fileDragDropUploadImg = document.getElementById('fileDragDropUploadImg').value;
+       // var fileDragDropUploadImg = document.getElementById('fileDragDropUploadImg').value;
         //var fileDragDropUploadImg = document.getElementById('fileDragDropUploadImg').value; 
         var dropzone = document.getElementById('dropzone');
         var listanitem = $("#listanitem").val();
@@ -51,36 +61,36 @@ var listanitem ="";
         $j(".loader1").css({
             "display": "none"
         });
-        dropzone.ondrop = function(e){
-            $j(".loader1").css({
-                "display": "block"
-            });
-            e.preventDefault();
-            this.className ='dropzone';
-            files_list = e.dataTransfer.files;
-            for(x = 0; x < files_list.length; x++){
-                formData.append('file[]', files_list[x]);
-                //formData.append('post['+x+']', files_list[x]);
-            }
+        // dropzone.ondrop = function(e){
+        //     $j(".loader1").css({
+        //         "display": "block"
+        //     });
+        //     e.preventDefault();
+        //     this.className ='dropzone';
+        //     files_list = e.dataTransfer.files;
+        //     for(x = 0; x < files_list.length; x++){
+        //         formData.append('file[]', files_list[x]);
+        //         //formData.append('post['+x+']', files_list[x]);
+        //     }
 
-            e.preventDefault();
-            $j.ajax({
-                url : fileDragDropUploadImg,
-                type: "POST",
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function(data)
-                {
-                    $j('#gallery1').html(data);
-                    $j(".loader1").css({
-                        "display": "none"
-                    });
-                    $j("#uploadPhoto").hide(300);
+        //     e.preventDefault();
+        //     $j.ajax({
+        //         url : fileDragDropUploadImg,
+        //         type: "POST",
+        //         data: formData,
+        //         contentType: false,
+        //         processData: false,
+        //         success: function(data)
+        //         {
+        //             $j('#gallery1').html(data);
+        //             $j(".loader1").css({
+        //                 "display": "none"
+        //             });
+        //             $j("#uploadPhoto").hide(300);
 
-                }
-            });
-        };
+        //         }
+        //     });
+        // };
 
 
 
@@ -184,14 +194,14 @@ var listanitem ="";
                 }
             });
         });
-        dropzone.ondragover = function(){
-            this.className = 'dropzone dragover';
-            return false;
-        };
-        dropzone.ondragleave = function(){
-            this.className = 'dropzone';
-            return false;
-        };
+        // dropzone.ondragover = function(){
+        //     this.className = 'dropzone dragover';
+        //     return false;
+        // };
+        // dropzone.ondragleave = function(){
+        //     this.className = 'dropzone';
+        //     return false;
+        // };
 
     });
 
@@ -370,15 +380,6 @@ $(document).ready(function(){
     // $j('#note-comment').elastic();
 });
 
-
-//Update account jquery
-var genderUpdate;
-$(function () {
-    var $j = jQuery.noConflict();
-    $j(".gender").on('click', function(){
-        genderUpdate = $j(this).val();
-    });
-});
 
 //Update Account
 

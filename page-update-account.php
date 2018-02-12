@@ -3,17 +3,21 @@
  *  Template Name: Update Account
  */
 require_once('sub-header.php');
-
-
 session_start();
 $user_id = $_SESSION['user_id'];
-
 ?>
-
-
 <style>
     #mainWrapper{border-bottom:0 !important;}
     select.form-control{display:inline !important;font-size:18px !important;padding: 5px !important;}
+
+
+    .not_active_sub_navbar{
+        display: none;
+    }
+    .active_sub_navbar{
+        display: block !important;
+    }
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo ( 'template_url' ); ?>/css/custom-list.css" />
@@ -63,7 +67,7 @@ $user_id = $_SESSION['user_id'];
 
                                 <label class="btn col-xs-6"  style="padding:0px;" >
                                     <input id="genderMale" class = "gender" type="radio" value="Male" name='gender'>
-<!--                                    <input id="genderMale" onChange="dress_jacket();" class = "gender" type="radio" value="Male" name='gender'>-->
+ 
                                     <i class="fa fa-square-o fa-2x">
 
                                     </i>
@@ -74,8 +78,7 @@ $user_id = $_SESSION['user_id'];
                                         MALE
                                     </span>
                                 </label>
-                                <label class="btn col-xs-6" style="padding:0px;">
-<!--                                    <input id="genderFemale" onChange="dress_jacket();" class = "gender"  type="radio" value="Female" name='gender'>-->
+                                <label class="btn col-xs-6" style="padding:0px;"> 
                                     <input id="genderFemale" class = "gender"  type="radio" value="Female" name='gender'>
                                     <i class="fa fa-square-o fa-2x">
 
@@ -91,7 +94,28 @@ $user_id = $_SESSION['user_id'];
 
                     </div>
                 </div>
+<script type="text/javascript">
 
+
+
+
+    $(document).ready(function () {
+
+        $('.gender').change(function () {
+            var data = $(this).attr('value'); 
+
+            $('.active_sub_navbar').removeClass('active_sub_navbar');
+            $('.'+data).addClass('active_sub_navbar');  
+
+
+         });
+ 
+    });
+
+
+
+
+</script> 
                 <!--end of the first column--> 
                 <input type="hidden" name="form_title" value="NewShopper">
                     <div class="popup-body">
@@ -351,14 +375,53 @@ $user_id = $_SESSION['user_id'];
                                 <h3 class="textInsideSectionsPopup font-column-Subhead " style="display: initial;font-family: 'AvenirNextLTW01-UltraLight', 'Avenir', 'Didot' !important;font-weight: bold;letter-spacing: 1px;font-size: 19px; margin-left: -9px; width: auto;text-align: left">
                                     CLICK ON THE CATEGORY LINK TO SEE EXAMPLES OF EACH
                                 </h3>
+
+
+
+
                                 <div class="tab_panels">
-                                    <nav class="modal_nav">
-                                        <ul class="tabs">
-                                            <li rel="panel1" class="actived active-underline" ><a class = "red" href="javascript:void(0);" style = "font-size: 16px;">CASUAL</a></li>
-                                            <li id="panel2li" rel="panel2" style="display:none;"><a href="javascript:void(0);" style = "font-size: 16px;">CHIC</a></li>
-                                            <li id="panel6li" rel="panel6" style="display:none;"><a href="javascript:void(0);"  style = "font-size: 16px;">MENS WEAR</a></li>
-                                            <li rel="panel3"><a href="javascript:void(0);" style = "font-size: 16px;">PREPPY</a></li>
-                                            <li rel="panel4"><a href="javascript:void(0);" style = "font-size: 16px;">STREETWEAR</a></li>
+                                    <nav class="modal_nav ">
+                                        <ul class="tabs not_active_sub_navbar active_sub_navbar Female">
+                                            <li rel="panel1" class="actived  active-underline" >
+                                                <a class = "red" href="javascript:void(0);" style = "font-size: 16px;"> CASUAL
+                                                </a>
+                                            </li>
+                                            <li id="panel2li" rel="panel2">
+                                                <a href="javascript:void(0);" style = "font-size: 16px;">
+                                                    CHIC
+                                                </a>
+                                            </li> 
+                                            <li rel="panel3">
+                                                <a href="javascript:void(0);" style = "font-size: 16px;">
+                                                    PREPPY
+                                                </a>
+                                            </li>
+                                            <li rel="panel4">
+                                                <a href="javascript:void(0);" style = "font-size: 16px;">
+                                                    STREETWEAR
+                                                </a>
+                                            </li>
+                                        </ul>
+                                         <ul class="tabs not_active_sub_navbar Male" >
+                                            <li rel="panel1" class="actived active-underline" >
+                                                <a class = "red" href="javascript:void(0);" style = "font-size: 16px;"> CASUAL
+                                                </a>
+                                            </li> 
+                                            <li id="panel6li" rel="panel6">
+                                                <a href="javascript:void(0);"  style = "font-size: 16px;">
+                                                    MENS WEAR
+                                                </a>
+                                            </li>
+                                            <li rel="panel3">
+                                                <a href="javascript:void(0);" style = "font-size: 16px;">
+                                                    PREPPY
+                                                </a>
+                                            </li>
+                                            <li rel="panel4">
+                                                <a href="javascript:void(0);" style = "font-size: 16px;">
+                                                    STREETWEAR
+                                                </a>
+                                            </li>
                                         </ul>
                                     </nav>
 
@@ -428,23 +491,23 @@ $user_id = $_SESSION['user_id'];
                                         </div>
                                     </div>
 
-                                    <div id="panel2" class="panell text-center " style="visibility:hidden">
+                                    <div id="panel2" class="panell text-center " >
                                         <div class="row">
                                             <div class="hover_append"  style="cursor:pointer;z-index:9999;" id="imageContainerchic">
                                                 <label for="chicCheck" onclick="changeSelected()"><h4  class="stephen_selectButton" id="chicSelect">SELECT</h4></label>
                                                 <input type="checkbox" id="chicCheck" class="hidden" name="itemtypeconsign[]" value="CHIC">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                         </div>
                                     </div>
@@ -469,6 +532,8 @@ $user_id = $_SESSION['user_id'];
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 btn-select-update" style="text-align: center;">
@@ -506,7 +571,7 @@ $user_id = $_SESSION['user_id'];
                                                 ?>
                                                     
 
-                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/Balenciaga.jpg" alt="...">
+                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/avatar/profile.png" alt="...">
                                                         
 <!--                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "--><?php //echo get_bloginfo ( 'template_url' ); ?><!--/img/Balenciaga.jpg" alt="...">-->
                                                     <?php
