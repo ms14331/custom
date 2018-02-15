@@ -680,7 +680,29 @@ p.brandShortInformation {
 		padding: 0 20px;
 	}
 }
+
+
+
+@media screen and (max-width: 991px) {
+	.afterPurchaseResale{ 
+	    padding-top: 40px;
+	    min-height: 437px !important; 
+	}
+	.cost{
+		padding: 0 !important;
+	}
+
+}
+
+
 @media screen and (max-width: 960px) {
+
+ 
+	.afterPurchaseContent{
+			
+	    position: relative;
+	    top: 37px;
+	}
 	.howMuchCouldYouMake p{
 		font-size: 24px !important;
 	}
@@ -689,7 +711,7 @@ p.brandShortInformation {
 		line-height: normal;
 	}
 	.afterPurchaseResale {
-		padding-top: 0;
+	    padding-top: 0px; 
 		min-height: 0;
 	}
 	.quote{
@@ -719,7 +741,14 @@ p.brandShortInformation {
 		font-size: 17px;
 	}
 }
+
+
 @media screen and (max-width: 768px) {
+	.afterPurchaseResale{     
+		min-height: 535px !important;
+	}
+
+ 
 	.readyToSignUp {
 		padding: 40px 20px;
 	}
@@ -796,6 +825,22 @@ p.brandShortInformation {
 		margin: 6px auto;
 	}
 }
+
+
+
+@media screen and (max-width: 767px) {
+	.afterPurchaseResale{     
+		min-height: 490px !important;
+	}	
+	.cost{
+		padding: 25px !important;
+	}
+
+
+}
+
+
+
 @media screen and (max-width: 480px) {
 	.afterPurchase h1 {
 		font-size: 25px;
@@ -869,4 +914,47 @@ p.brandShortInformation {
 	}
 		
 	
+}
+
+
+@media screen and (max-width: 451px) {
+	.afterPurchaseResale{     
+		min-height: 533px !important;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.afterPurchaseResale{     
+		min-height:475px !important;
+	}
+}
+
+
+@media screen and (max-width: 421px) {
+	.afterPurchaseResale{     
+		min-height:495px !important;
+	}
+}
+
+
+@media screen and (max-width: 394px) {
+	.afterPurchaseResale{     
+		min-height: 530px!important;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.afterPurchaseResale{     
+		min-height: 505px!important;
+	}
+}
+@media screen and (max-width: 351px) {
+	.afterPurchaseResale{     
+		min-height: 530px!important;
+	}
+}
+@media screen and (max-width: 339px) {
+	.afterPurchaseResale{     
+		min-height: 555px !important;
+	}
 }

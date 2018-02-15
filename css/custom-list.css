@@ -1339,6 +1339,13 @@
 
 }
 
+@media screen and ( max-width:487px){
+    .stephen-nav-center ul.nav li{
+        margin-left: 0px !important; 
+    }
+}
+
+
 @media (max-width: 449px){
     /**header.php**/
     .afterPurchase h1{
@@ -1601,6 +1608,14 @@
     }
 
 }
+
+@media screen and ( max-width:367px){
+    .stephen-nav-center ul.nav li > a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 
 .btn-default:hover {
      color: white !important;

@@ -515,7 +515,7 @@ positioning-left
         <!-- YOULL MAKE START-->
         <div class="row col-lg-9  col-md-9 col-sm-9 col-xs-9 ernBreakDown-Column" style="border:1px solid #000;float: none;margin: auto;padding: 0px;border: 1px solid #ccc;    margin-bottom: 40px;">
             <div class="col-sm-6" style=" padding-top: 5%;padding-bottom: 5%;background-color:#f2f2f2;"><!-- SELLING PRICE -->
-                <i class="fa fa-2x fa-money stephen-icons" style="color:#00a8e6;" aria-hidden="true"></i>
+                <!--<i class="fa fa-2x fa-money stephen-icons" style="color:#00a8e6;" aria-hidden="true"></i> -->
                 <h4>
 					<b>
 						BUYER PAYS
@@ -541,7 +541,7 @@ positioning-left
 			
 			
             <div class="col-sm-6" style=" padding-top: 5%;padding-left: 0px;padding-right: 0px;"><!-- YOULL MAKE -->
-                <i class="fa fa-2x fa-check stephen-icons" style="color:#00a8e6;" ></i>
+                <!--<i class="fa fa-2x fa-check stephen-icons" style="color:#00a8e6;" ></i> -- >
                 <h4><b>YOU'LL MAKE <i class="fa fa-2x fa-question-circle-o" style="color:#444;font-size:25px;margin-left:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal"></i></b><!-- <img src="<?php echo IMG; ?>/questionmark.png" data-toggle="modal" data-target="#myModal" alt="" style="margin-top:-20px;margin-left:10px;cursor:pointer;" width="32" height="32"> --></h4>
                 <!--MODAL START-->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -572,7 +572,7 @@ positioning-left
                 </div>
                 <div class="tab-content">
                     <div id="day1" class="tab-pane fade in active">
-                        <h3 id="day1field" style="margin-top:12px;font-family: 'AvenirNextLTW01-UltraLight' !important; font-weight: 900;">$50 / <span style = "color:red">DISCOUNTED</span> 0% </h3>
+                        <h4 id="day1field" style="margin-top:12px;font-family: 'AvenirNextLTW01-UltraLight' !important; font-weight: 900;">$50 / <span style = "color:red">DISCOUNTED</span> 0% </h4>
                     </div>
                     <div id="day2" class="tab-pane fade">
                         <h3 id="day2field" style="margin-top:20px;margin-bottom: 0px;" >$0.00</h3>

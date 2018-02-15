@@ -1,6 +1,6 @@
 div.wp-private-resale { 
-    height: 540px; 
-    position: relative;  
+    /*height: 540px; 
+    position: relative; */ 
 }
 div.texts1, div.texts2, div.texts3{ 
     min-height: 85%;   
@@ -133,7 +133,7 @@ div.texts3 > p{
         padding: 2px 0px !important;
     }
     .cost{
-        padding:20px !important;
+        padding:20px;
     }
     div.wp-private-resale {
         height: 540px;

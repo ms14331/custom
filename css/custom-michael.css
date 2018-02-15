@@ -1,3 +1,9 @@
+
+	.w-lu-dsired2 > li > a{
+		position: relative;
+		top: 0px !important;
+	}
+
 footer > div.footer-div1 .menu-bars{
  	background-color:black; 
  	padding: 15px !important;
@@ -254,7 +260,7 @@ div.text2 a{
 
 
 .container-fluid{
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 h4.strt-reducing{
 	line-height: 30px;
@@ -263,10 +269,7 @@ h4.strt-reducing{
 }
 .start-reduce-div{
 	margin-top: 40px !important; 
-}
-.qouteStrtReWrapper{
-	padding-bottom: 45px;
-}
+} 
 .c-s-ven{
     cursor: pointer !important;
 }
@@ -519,6 +522,14 @@ footer > div.footer-div1{
 		font-family: 'Didot' !important;
 		    padding: 0px !important;
 	}
+ }
+
+
+ @media screen and ( min-width: 1200px){
+ 	.qouteStrtReWrapper{
+    	padding-bottom: 45px;
+	}
+
  }
 @media screen and ( max-width:991px){ 
 	.cosing-now-desired-item-btn{
@@ -774,7 +785,7 @@ footer > div.footer-div1{
 	    width: 100%;	
      } 
 	.w-lu-dsired1 > li{ 
-		display:block !important;
+		/*display:block !important; */
 	}
 	.brandselector{
 		float:none !important;
@@ -883,7 +894,7 @@ footer > div.footer-div1{
 		top:15px;
 		color:#000;
 		font-family: 'Didot';
-		display: block;
+		/*display: block;*/
 		line-height: normal;
 	}
 	.main-container{
@@ -927,7 +938,7 @@ footer > div.footer-div1{
 
 @media screen and ( min-width:376px) and ( max-width: 425px){
 	.w-lu-dsired1 > li{ 
-		display:block !important;
+		/*display:block !important;*/
 	}
 	.sercive-lap{
 	    position: relative;
@@ -1026,7 +1037,7 @@ footer > div.footer-div1{
 		top:15px;
 		color:#000;
 		font-family: 'Didot';
-		display: block;
+		/*display: block; */
 		line-height: 'normal';
 	}
  
@@ -1063,7 +1074,7 @@ footer > div.footer-div1{
 } 
 @media screen and ( min-width:320px) and ( max-width: 375px){ 
 	.w-lu-dsired1 > li{ 
-		display:block !important;
+		/*display:block !important; */ 
 	}
 .consignWrapper p{
 	font-size: 19px !important;
@@ -1192,7 +1203,7 @@ footer > div.footer-div1{
 
 
 	a.w-women{ 
-		font-size: 24px; 
+		font-size: 18px !important; 
 		text-decoration: none;
 		cursor: pointer;
 		color:blue; 
@@ -1200,9 +1211,21 @@ footer > div.footer-div1{
 		top:15px;
 		color:#000;
 		font-family: 'Didot';
-		display: block;
+		padding: 0px !important;
+		/*display: block; */
 		line-height: 'normal';
 	}
+	.w-lu-dsired2 > li{
+		display: block !important;     
+		padding: 5px !important;
+	}
+
+	.w-lu-dsired2 > li > a{
+		position: relative;
+		top: 0px !important;
+	}
+
+
 	.main-container{
 		position: relative;
 		top:20px;

@@ -670,7 +670,7 @@ require_once('sub-header.php');// query
 
                     ?>
                     <h1>LIFE AFTER PURCHASE</h1>
-                    <h4>PROFIT SINCE 6/20/2016<br>$7,218</h4>
+                    <h4><!--PROFIT SINCE 6/20/2016<br>-->$7,218</h4>
                 </div>
             </div>
 
