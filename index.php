@@ -280,64 +280,33 @@
         </div><!--end of resale -->         
     </div><!-- end of content -->    
 
-
+<div class="clearfix"></div>
 <!-- fsheen -->
     <div id="what-consign2" id="consign2" style="display:block;position:relative;top:-50px;visibility:hidden;"></div>
-    <article class = "div-container">
+    <article class = "div-container"  style="border-top: 1px solid black ;    padding-top: 30px;">
         <div class="container ">
-            <div class="row first_section">             
-             <div class = "w-c-s-column" style="margin-bottom:100px;">
+            <div class=" first_section">  
+
+
+
+             <div class = "w-c-s-column clearfix" style="margin-bottom: 20px;">
                 <h4 class="text-center consign-sale-a" style="color:black;" ><span style="color:black;" id = "what-consign">WHAT'S A CONSIGNMENT SALE?</span></h4>             
                 <p class="text-left pw-c-s-column1 text-lp">A consignment sale is a 3 day event where you sale,  shop and save on new and gently used men and women clothing, shoes, accessories and home goods.</p>
-                <p class="text-left pw-c-s-column" >Shopping a consignment event is a great way to shop high quality name brand items at <b>25-70%</b> off retail! Selling your items at the event is amazingly easy.  As a consignor you register to sale your items. With our tiered commission structure, you can earn as much as <b>50%-80%</b> of the selling price. Prior to the sale you, the consignor, simply register and submit your items online for approval. You deliver your items to us prior to the event for inspection. We advertise, set up the location for the sale, set up all consigned items at the sale site, and sell your items!</p>
-                <div class="border-right brd-right"></div>     
+                <p class="text-left text-center" >Shopping a consignment event is a great way to shop high quality name brand items at <b>25-70%</b> off retail! Selling your items at the event is amazingly easy.  As a consignor you register to sale your items. With our tiered commission structure, you can earn as much as <b>50%-80%</b> of the selling price. Prior to the sale you, the consignor, simply register and submit your items online for approval. You deliver your items to us prior to the event for inspection. We advertise, set up the location for the sale, set up all consigned items at the sale site, and sell your items!</p>   
+
+
+<!--<div class="border-right brd-right"></div>     -->
+
+
             </div>
+
+
+            <div class="clearfix"></div>
+
  
             <div class="container-fluid row-column3">
-                <div class="row row-col21">
-                    <!--    
-                    <div class="col-sm-4 wp-private-resale"  >  
-                        <div class = "text1" >  
-                            <h5> PRIVATE PRESALE</h5> 
-                            <p class = "q-l-private">Score the best items by shopping before the public!</p></br>
-                            <h5 class="text-center a-private"  style = "font-family:'AvenirNextLTW01-UltraLight' !important">Thusday, June 23rd 2016</h5> 
-                            <p>Get in Before the public </br>Available to Anyone <br/>for Purcahse <br/>Passes required for everyone 13+</p> 
-                            <h5 class="text-center m-private" style = "font-family:'AvenirNextLTW01-UltraLight' !important">Tickets are NON-REFUNDABLE</h5>  <br/><br/>
-                            <h5 class="text-center b-private" style = "font-family:'AvenirNextLTW01-UltraLight' !important">Cost: $10.00-$20.00</h5></br> 
-                            <a href="#" class="">BUY A TICKET</a>   
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wp-private-resale" >  
-                        <div class = "text2" style = "background:#ff6600 !important;"> 
-                            <h5 class="text-center " >PUBLIC SHOPPING</h5>
-                            <p>Shop the entire site for the best deals.</p></br>
-                            <h5 class="text-center c-private" style = "font-family:AvenirNextLTW01-UltraLight !important">Friday, June 24th</h5>
-                            <p>9am-7pm</p></br>
-                            <h5 class="text-center d-private" style = "font-family:AvenirNextLTW01-UltraLight !important">Saturday, June 25th</h5>
-                            <p class = "e-p-private">9am-5pm</p>
-                            <p>15% off Many Items</p></br>
-                            <h5 class="text-center f-private" style = "font-family:AvenirNextLTW01-UltraLight !important">Sunday, June 25th</h5>
-                            <p class = "g-p-private" >9am-5pm</p>
-                            <p >25% off Many Items</p><br/>
-                            <a href="new-shopper" >GET NOTIFIED</a>   
-                        </div>  
-                    </div>
-                    <div class="col-sm-4 wp-private-resale" >  
-                        <div class = "text3"> 
-                            <h5 class="text-center" style = "font-family: 'Didot'" >CONSIGNER DATES</h5>
-                            <p class = "r-l-private">Sore the best deal by shopping before the public</p><br>
-                            <h5 class="text-center h-private" style = "font-family:AvenirNextLTW01-UltraLight !important" >Tuesday, June 21st</h5>
-                            <p class = "i-h-private">Merchantise Drop-Off - 12pm-8pm</p><br>
-                            <h5 class="text-center j-private" style = "font-family:AvenirNextLTW01-UltraLight !important">Wednes day, April 21st</h5>
-                            <p class = "k-p-private">Merchantise Drop-Off - 12pm-8pm</p><br>
-                            <h5 class="text-center l-private" style = "font-family:AvenirNextLTW01-UltraLight !important">Sunday,April 24th</h5>
-                            <p class = "l-p-private">Consignor Pick-up-4:30-7:30pm SHARP (no exceptions)</p><br> 
-                            <a href="new-consign" class="">CONSIGN NOW</a>  
-                            
-                        </div>
-                    </div>
-                    -->
-                    <div class="col-sm-4 wp-private-resale col1"  >
+                <div class="row row-col21"> 
+                    <div class="col-sm-4 wp-private-resale col1 clearfix"  >
                         <div class = "texts1" > 
                             <h5 style = "font-family: 'Didot'" > PRIVATE PRESALE</h5> 
                             <p>Score the best items by shopping before the public!</p> 
@@ -346,7 +315,7 @@
                             <p>Available to Anyone for Purcahse </p>
                             <p>Passes required for everyone 13+</p> 
                             <p>Tickets are NON-REFUNDABLE</p> 
-                            <h5  class = "cost"style = "margin-bottom: 0px;padding-top: 68px;font-family:'AvenirNextLTW01-UltraLight' !important">Cost: $10.00-$20.00</h5> 
+                            <h5  class = "cost" style = "margin-bottom: 0px;padding-top: 39x;font-family:'AvenirNextLTW01-UltraLight' !important">Cost: $10.00-$20.00</h5> 
                             
                         </div>
                         <div class="footer" style = "background-color: #F3F3F3 !important; ">
@@ -421,7 +390,12 @@
             </div>
         </div>
     </article> 
-    <div id="start-reducing2"></div>
+
+
+
+    <div id="start-reducing2 clearfix"></div>
+    
+
     <div class="uk-grid uk-grid-collapse start start-reduce-div" >
         <div class="uk-container uk-container-center content" >  
             <article class="titleHead">
@@ -553,7 +527,7 @@
                             <a><img src="<?php echo IMG; ?>/deals.png"></a>
                         </div>
                         <div class="uk-width-large-3-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <p class="fontSize-17px"><a style="font-family:'Didot';letter-spacing:-1px;"><b>GREAT DEALS</b></a></p>
+                            <p class="fontSize-17px"><a style="font-family:'Didot','AvenirNextLTW01-UltraLight' !important; letter-spacing:-1px;"><b>GREAT DEALS</b></a></p>
                             <p>Maximize your money by buying new and gently used items that are 25-70% off the original price.</p>
                         </div>
                     </div><!-- end of uk grid -->
@@ -564,7 +538,7 @@
                             <a><img src="<?php echo IMG; ?>/handpickedItem.png"></a>
                         </div>
                         <div class="uk-width-large-3-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <p class="fontSize-17px"><a style="font-family:'Didot';letter-spacing:-1px;"><b>HAND PICKED ITEMS</b></a></p>
+                            <p class="fontSize-17px"><a style="font-family:'Didot','AvenirNextLTW01-UltraLight' !important;letter-spacing:-1px;"><b>HAND PICKED ITEMS</b></a></p>
                             <p>Shop items that have been hand picked and authenticated our team of fashion and design experts.</p>
                         </div>
                     </div><!-- end of uk grid -->
@@ -575,7 +549,7 @@
                             <a ><img src="<?php echo IMG; ?>/extraCash.png"></a>
                         </div>
                         <div class="uk-width-large-3-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <p class="fontSize-17px"><a style="font-family:'Didot';letter-spacing:-1px;"><b>EXTRA CASH</b></a></p>
+                            <p class="fontSize-17px"><a style="font-family:'Didot','AvenirNextLTW01-UltraLight' !important;letter-spacing:-1px;"><b>EXTRA CASH</b></a></p>
                             <p>Selling items that are high quality desired and in demand deems large profits.</p>
                         </div>
                     </div><!-- end of uk grid -->
@@ -586,7 +560,7 @@
                             <a ><img src="<?php echo IMG; ?>/convenience.png"></a>
                         </div>
                         <div class="uk-width-large-3-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <p class="fontSize-17px"><a  style="font-family:'Didot';letter-spacing:-1px;"><b>CONVENIENCE</b></a></p>
+                            <p class="fontSize-17px"><a  style="font-family:'Didot','AvenirNextLTW01-UltraLight' !important;letter-spacing:-1px;"><b>CONVENIENCE</b></a></p>
                             <p>Save time on marketing and meeting up with potential buyers by consigning you items with us.</p>
                         </div>
                     </div><!-- end of uk grid -->
@@ -597,7 +571,7 @@
                             <a ><img src="<?php echo IMG; ?>/eye.png"></a>
                         </div>
                         <div class="uk-width-large-3-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <p class="fontSize-17px"><a style="font-family:'Didot';letter-spacing:-1px;"><b>VISIBILITY</b></a></p>
+                            <p class="fontSize-17px"><a style="font-family:'Didot','AvenirNextLTW01-UltraLight' !important;letter-spacing:-1px;"><b>VISIBILITY</b></a></p>
                             <p>Get your items in front of people who are ready to buy. The more your items are seen, the better chance it will sale.</p>
                         </div>
                     </div><!-- end of uk grid -->
@@ -613,15 +587,15 @@
         </article><!-- end of article -->
          <!-- YOULL MAKE START-->
     <div class="row col-md-12" style="margin-top:10px;padding-bottom: 60px;">
-        <div class="col-sm-6" style="padding-top:10%;padding-bottom:10%;background-color:#f2f2f2;"><!-- SELLING PRICE -->
-            <i class="fa fa-2x fa-money stephen-icons" style="color:#00a8e6;" aria-hidden="true"></i>
+        <div class="col-sm-6" style="padding-top:10%;padding-bottom:10%;background-color:#f2f2f2;"><!-- SELLING PRICE 
+            <i class="fa fa-2x fa-money stephen-icons" style="color:#00a8e6;" aria-hidden="true"></i>-->
             <h4><b>SELLING PRICE</b></h4>
             <input type="text" onkeyup="computeDays()" name="selling_price" id="selling_price" class="uk-block boxBuyerInput" value="" style="width:50%" placeholder="$0.00">
             <a class="button-add" id="button_add" onclick="clearField()">CLEAR<!-- <img src="<?php echo IMG; ?>/plus.png"  alt=""> --></a>
           <h4 style="margin-top:30px;"><b><span id="showAddedPrice">$0</span> - <span id="showPercentage">0%</span> COMMISSION FEE</b></h4>
         </div>
-        <div class="col-sm-6" style="padding-top:10%; padding-left: 0px;padding-right: 0px;"><!-- YOULL MAKE -->
-            <i class="fa fa-2x fa-check stephen-icons" style="color:#00a8e6;" ></i>
+        <div class="col-sm-6" style="padding-top:10%; padding-left: 0px;padding-right: 0px;"><!-- YOULL MAKE 
+            <i class="fa fa-2x fa-check stephen-icons" style="color:#00a8e6;" ></i>-->
             <h4><b>YOU'LL MAKE <i class="fa fa-2x fa-question-circle-o" style="color:#444;font-size:25px;margin-left:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal"></i></b><!-- <img src="<?php echo IMG; ?>/questionmark.png" data-toggle="modal" data-target="#myModal" alt="" style="margin-top:-20px;margin-left:10px;cursor:pointer;" width="32" height="32"> --></h4>
             <!--MODAL START-->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -790,7 +764,7 @@
   <!-- YOULL MAKE END-->
   <div id="accept2" style="display:block;position:relative;top:270px;visibility:hidden;"></div>
     <div class="brands">
-        <div class="uk-container uk-container-center content"> 
+        <div class=" container uk-container-center content"> 
             <article class="titleHead">
                 <h4><span class="black" id="accept">BRANDS WE ACCEPT</span></h4>
                 <h5>*Our customers shop at stores like J Crew, Zara, Bloomindales, Karmaloop, Neiman Marcus and Z Gallerie.</h5>
@@ -800,12 +774,12 @@
                         <ul class="brandSelector" style = "width: 100%"data-uk-switcher="{connect:'#brandsContent'}">
                             
                                 <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 uk-float-left" style = "text-align: right;">
-                                    <a href="javascript:void(0)" class="buttonWomen" data-uk-switcher-item="0">WOMEN</a>
+                                    <a href="javascript:void(0)" class="buttonWomen text-center" data-uk-switcher-item="0">WOMEN</a>
                                 </div> 
                         <!-- end of width 1-2 -->
                              
                                 <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 uk-float-right " style = "text-align: left;">
-                                    <a href="javascript:void(0)" class="buttonMen" data-uk-switcher-item="0">MEN</a>
+                                    <a href="javascript:void(0)" class="buttonMen text-center" data-uk-switcher-item="0">MEN</a>
                                 </div><!-- end of width 1-2 -->
                              
                         </ul>   
@@ -836,7 +810,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li> 
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=1">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=1">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -861,7 +835,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=2">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=2">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -886,7 +860,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=3">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=3">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->    
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -911,7 +885,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=4">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=4">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -936,7 +910,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=5">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=5">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -961,7 +935,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=6">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=6">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container --> 
                                 </div><!-- end of uk-grid -->
@@ -992,7 +966,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=7">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=7">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -1017,7 +991,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=8">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=8">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -1042,7 +1016,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=9">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=9">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->    
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -1067,7 +1041,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=10">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=10">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -1092,7 +1066,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=11">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=11">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container -->
                                     <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 brandHolder">
@@ -1117,7 +1091,7 @@
                                                 <li>Goyard</li>
                                                 <li>Gucci</li>
                                             </ul>
-                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=12">DISIRED ITEMS</a></p>
+                                            <p class="footerInformation brandCategories"><a href="http://lifeafterpurchase.com/desired-items?id=12">NOW ACCEPTING</a></p>
                                         </div><!-- end of brand holder -->
                                     </div><!-- end of uk container --> 
                                 </div><!-- end of uk-grid -->
