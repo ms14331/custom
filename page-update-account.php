@@ -18,6 +18,13 @@ $user_id = $_SESSION['user_id'];
         display: block !important;
     }
 
+    .activited{ 
+        display: block !important;
+    }
+    .not_actived{
+        display: none;
+    }
+     
 </style>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo ( 'template_url' ); ?>/css/custom-list.css" />
@@ -30,7 +37,7 @@ $user_id = $_SESSION['user_id'];
 <script src="<?php echo JS; ?>/tops.js"></script>
 
 <div  id="frmbuyer" >
-<div class="popupFrm" style="width:80%;">
+<div class="popupFrm" style="width:100%;">
 
 
     <input type="hidden" id = "uc_upload_image" value="<?php echo get_site_url(); ?>/uc_upload_image/">
@@ -38,7 +45,7 @@ $user_id = $_SESSION['user_id'];
 
 <!-- Modal content-->
     <div class="contentPopup" style = "padding:0px;">
-        <div class="contents">
+        <div class="contents"  style="width:100%;">
         <div class="headerPopup">
             <h4 class="titleLabelPopup font-column-head" style="font-family: 'Didot' !important;letter-spacing: 1px; "> FILL OUT DETAILS ABOUT YOURSELF</h4>
         </div>
@@ -66,7 +73,7 @@ $user_id = $_SESSION['user_id'];
                             <div class="col-xs-12 form-control column-font"    data-toggle="buttons" style="height: 41px !important;">
 
                                 <label class="btn col-xs-6"  style="padding:0px;" >
-                                    <input id="genderMale" class = "gender" type="radio" value="Male" name='gender'>
+                                    <input id="genderMale" class = "gender" type="radio" value="Male" rel="panel5" name='gender'>
  
                                     <i class="fa fa-square-o fa-2x">
 
@@ -79,7 +86,7 @@ $user_id = $_SESSION['user_id'];
                                     </span>
                                 </label>
                                 <label class="btn col-xs-6" style="padding:0px;"> 
-                                    <input id="genderFemale" class = "gender"  type="radio" value="Female" name='gender'>
+                                    <input id="genderFemale" class = "gender"  type="radio" value="Female" rel="panel1" name='gender'>
                                     <i class="fa fa-square-o fa-2x">
 
                                     </i>
@@ -94,28 +101,31 @@ $user_id = $_SESSION['user_id'];
 
                     </div>
                 </div>
-<script type="text/javascript">
 
+                <script type="text/javascript">
 
+                    $(document).ready(function () {
 
+                        $('.gender').change('touchstart', function () {
+                            
+                            var data = $(this).attr('value');  
+                            
+                            var panel = $(this).attr("rel"); 
+                             
+                            $(".activited").removeClass("activited");
 
-    $(document).ready(function () {
+                            $("#" + panel).addClass("activited");
 
-        $('.gender').change(function () {
-            var data = $(this).attr('value'); 
+                            $('.active_sub_navbar').removeClass('active_sub_navbar');
 
-            $('.active_sub_navbar').removeClass('active_sub_navbar');
-            $('.'+data).addClass('active_sub_navbar');  
+                            $('.'+data).addClass('active_sub_navbar');
 
+                         });
+                 
+                    });
 
-         });
- 
-    });
+                </script> 
 
-
-
-
-</script> 
                 <!--end of the first column--> 
                 <input type="hidden" name="form_title" value="NewShopper">
                     <div class="popup-body">
@@ -184,8 +194,8 @@ $user_id = $_SESSION['user_id'];
                             <div style="margin-bottom: 10px;" >
                                 <input name="dress_jacket_size" placeholder =" " id="jacket" class="form-control"> 
                             </div>
-
-                            <p class="col-sm-1" style = "padding:0px;"  style = "display:none;"></p> 
+<!-- 
+                            <p class="col-sm-1" style = "padding:0px;"  style = "display:none;"></p>  -->
                             <div class="modal fade" id="showShoeSizes" role="dialog">
                                 <div class="modal-dialog">
                                     <!-- Modal content-->
@@ -356,6 +366,13 @@ $user_id = $_SESSION['user_id'];
                             </div>
                             <!--MODAL END -->
 
+
+
+                            <p id="dress_jacket" class="column-margnbotops clearfix" style = "padding:0px;">LIST YOUR FAVORITE BRANDS:</p>
+                            <div style="margin-bottom: 10px;" >
+                                <input name="dress_jacket_size" placeholder="A comma separates the brands." id="jacket" class="form-control"> 
+                            </div>
+
                         </div> 
 
 
@@ -364,8 +381,10 @@ $user_id = $_SESSION['user_id'];
                         <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 "></div>
 
                         <div class="border_b">
-                            <p class="textInsideSsectionsPopup col-md-4 font-column-Subhead" >LIST YOUR FAVORITE BRANDS:</p>
-                            <input type="text" name="brands" class="col-md-8 form-control acsbrands" id="listing_brand" style="width: 99%;margin-left: 7px;    font-size: 16px;" placeholder="A comma separates the brands.">
+                            <!-- <p class="textInsideSsectionsPopup col-md-4 font-column-Subhead" >LIST YOUR FAVORITE BRANDS:</p>
+
+
+                            <input type="text" name="brands" class="input-lg form-control acsbrands" id="listing_brand" style="/*margin-left: 7px;*/  font-size: 16px;" placeholder="A comma separates the brands."> -->
                         </div>
                             
 
@@ -376,18 +395,17 @@ $user_id = $_SESSION['user_id'];
                                     CLICK ON THE CATEGORY LINK TO SEE EXAMPLES OF EACH
                                 </h3>
 
-
-
-
+ 
                                 <div class="tab_panels">
                                     <nav class="modal_nav ">
                                         <ul class="tabs not_active_sub_navbar active_sub_navbar Female">
                                             <li rel="panel1" class="actived  active-underline" >
-                                                <a class = "red" href="javascript:void(0);" style = "font-size: 16px;"> CASUAL
+                                                <a class = "red" href="javascript:void(0);" style = "font-size: 16px;"> 
+                                                    CASUAL
                                                 </a>
                                             </li>
-                                            <li id="panel2li" rel="panel2">
-                                                <a href="javascript:void(0);" style = "font-size: 16px;">
+                                            <li rel="panel2">
+                                                <a hWref="javascript:void(0);" style = "font-size: 16px;">
                                                     CHIC
                                                 </a>
                                             </li> 
@@ -403,7 +421,7 @@ $user_id = $_SESSION['user_id'];
                                             </li>
                                         </ul>
                                          <ul class="tabs not_active_sub_navbar Male" >
-                                            <li rel="panel1" class="actived active-underline" >
+                                            <li rel="panel5" class="actived active-underline" >
                                                 <a class = "red" href="javascript:void(0);" style = "font-size: 16px;"> CASUAL
                                                 </a>
                                             </li> 
@@ -412,12 +430,12 @@ $user_id = $_SESSION['user_id'];
                                                     MENS WEAR
                                                 </a>
                                             </li>
-                                            <li rel="panel3">
+                                            <li rel="panel7">
                                                 <a href="javascript:void(0);" style = "font-size: 16px;">
                                                     PREPPY
                                                 </a>
                                             </li>
-                                            <li rel="panel4">
+                                            <li rel="panel8">
                                                 <a href="javascript:void(0);" style = "font-size: 16px;">
                                                     STREETWEAR
                                                 </a>
@@ -425,8 +443,17 @@ $user_id = $_SESSION['user_id'];
                                         </ul>
                                     </nav>
 
+
+
+
+                                        <?php 
+                                            require_once('isset/update_account_style_you_wear.php'); 
+                                        ?>
+<!-- 
                                     <div id="panel1" class="panell actived text-center panel">
                                         <div class="row">
+
+
                                             <div class="hover_append"  style="cursor:pointer;z-index:9999;" id="imageContainer">
                                                 <label for="casualCheck" onclick="changeSelected(this)" id = "1"><h4  class="stephen_selectButton" id="casualSelect">SELECT</h4></label>
                                                 <input type="checkbox" id="casualCheck" class="hidden" name="itemtypeconsign[]" value="CASUAL">
@@ -445,8 +472,7 @@ $user_id = $_SESSION['user_id'];
                                             </div>
                                         </div>
                                     </div>
-
-
+ 
                                     <div id="panel3" class="panell text-center ">
                                         <div class="row">
                                             <div class="hover_append"  style="cursor:pointer;z-index:9999;" id="imageContainerpreppy">
@@ -532,15 +558,22 @@ $user_id = $_SESSION['user_id'];
                                             </div>
                                         </div>
                                     </div>
-
-
+ --> 
                                 </div>
 
-                                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 btn-select-update" style="text-align: center;">
-                                    <button type="button" class="btn btn-default btn-lg" onclick="updateAccountaaa();" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;margin-bottom: 40px;margin-top: 40px;">SELECT</button>
-                                </div> 
-                                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 " style = "border-top:1px solid black;margin-bottom: 40px;"></div>
+                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 btn-select-update  clearfix" style="text-align: center;">
+                                <button type="button" class="btn btn-default btn-lg" onclick="updateAccountaaa();" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;margin-bottom: 40px;margin-top: 40px;">
+                                    SELECT
+                                </button>
+                            </div> 
+                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 " style = "border-top:1px solid black;margin-bottom: 40px;">
+                                
+                            </div>
+
                         </form>
+
+
+
                             <input type='hidden' id="uc_uploads" value="<?php echo get_bloginfo ( 'template_url' ); ?>/images/uc_uploads/">
                             <input type='hidden' id="cp_uploads" value="<?php echo get_bloginfo ( 'template_url' ); ?>/images/cp_uploads/">
 
@@ -558,8 +591,7 @@ $user_id = $_SESSION['user_id'];
                                         $name_uc_profile =  $value['profile_name'];
                                     }
 
-                                    ?>
-
+                                    ?> 
 
                                     <form  id="uploadProfile1Form" method="post" >
                                         <div class="form-group">
@@ -571,7 +603,7 @@ $user_id = $_SESSION['user_id'];
                                                 ?>
                                                     
 
-                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/avatar/profile.png" alt="...">
+                                                    <img class="oldImageProfileIcon images-profile-updates" id="oldImageProfileIcon1" style = "" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/avatar/profile.png" alt="...">
                                                         
 <!--                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "--><?php //echo get_bloginfo ( 'template_url' ); ?><!--/img/Balenciaga.jpg" alt="...">-->
                                                     <?php
@@ -588,9 +620,11 @@ $user_id = $_SESSION['user_id'];
                                                     <img style = "margin: auto;display: block;height:30px" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/cp_icon.png" alt="...">
                                                 </div>
                                             </div>
-                                            <input type="file" id="ppID" name="updateProfile" id="elem" style="visibility: hidden;"/>
+                                            
+                                            <input type="file" id="ppID" name="updateProfile" id="elem" style="visibility: hidden; width: 100%;"/>
+                                            
                                             <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 btn-select-update"  >
-                                                <input type="submit" id="uploadProfile1submit" class="btn btn-default btn-lg"  style = "background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;" value="UPDATE">
+                                                <input type="submit" id="uploadProfile1submit" class="btn btn-default btn-lg"  style = "font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;" value="UPDATE">
                                             </div>
                                         </div>
                                     </form>
@@ -619,7 +653,7 @@ $user_id = $_SESSION['user_id'];
                                             if($name_cp_profile == "") {
                                                 ?>
 
-                                                <img class="oldImageCoverIcon" id="oldImageCoverIcon" style = "height:350px; width: 1110px; border: 1px solid black;" src = "<?php echo get_bloginfo ( 'template_url'); ?>/img/gaukukh-nandanban-logo.jpg"  alt="...">
+                                                <img class="oldImageCoverIcon" id="oldImageCoverIcon" style = "  border: 1px solid black;" src = "<?php echo get_bloginfo ( 'template_url'); ?>/img/gaukukh-nandanban-logo.jpg"  alt="...">
 
 
                                                 <?php
@@ -641,11 +675,13 @@ $user_id = $_SESSION['user_id'];
                                                 <img style = "margin: auto;display: block;height:30px" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/cp_icon.png" alt="...">
                                             </div>
                                         </div>
-                                    </div>
-                                    <input type="file" id="cpID" name="updateCoverPhoto" style="visibility: hidden;"/>
-                                    <div  class="btn-select-update" >
-                                        <input type="submit"  id="updateCoverPhotosubmit" class="btn btn-default btn-lg"  style = "background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;" value="UPDATE">
-                                    </div>
+                                    </div> 
+                                        <input type="file" id="cpID" name="updateCoverPhoto" style="visibility: hidden; width: 100%;"/>
+
+                                        <div  class="btn-select-update text-center" >
+                                            <input type="submit"  id="updateCoverPhotosubmit" class="btn btn-default btn-lg"  style = "font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;" value="UPDATE">
+                                        </div> 
+
                                 </form>
                                 <div id="gallery_cp"></div>
                             </div>

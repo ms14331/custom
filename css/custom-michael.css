@@ -520,6 +520,12 @@ footer > div.footer-div1{
 		    padding: 0px !important;
 	}
  }
+@media screen and ( max-width:991px){ 
+	.cosing-now-desired-item-btn{
+		margin-bottom: 68px !important;
+		    margin-top: 10px !important; 
+	}
+}
 @media screen and ( min-width:768px) and ( max-width:991px){ 
 	/*
 	*
@@ -735,6 +741,14 @@ footer > div.footer-div1{
 		margin:0px 0px 0px 0px !important;
 		padding:0px !important;
 	}
+}
+
+@media screen and ( max-width: 767px){
+	.cosing-now-desired-item-btn{
+		margin-bottom: 50px !important;
+		margin-top: 20px !important; 
+	}
+
 }
 
 @media screen and ( min-width:426px) and ( max-width: 767px){

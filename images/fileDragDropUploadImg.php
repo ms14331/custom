@@ -5,9 +5,9 @@
 $file = "";
 
 
-//echo "<pre>";
+// echo "<pre>";
 //    print_r($_FILES);
-//echo "<pre>";
+// echo "<pre>";
 
 
 
@@ -29,8 +29,8 @@ if(isset($_FILES['file']['name'])){
                     // while(($file=readdir($handle)) != false){
                     // 	if($file==='.' || $file ==='..')continue;
                     // }$file_name
-
-                    echo '<img src = "'. get_bloginfo ( 'template_url' ). "/images/tmp_uploads/". $file_name. '" alt = "" width = "150px" height = "150px" alt="..." >';
+                    echo '<div style="width:  200px;height: 200px;background-position: 50% 50%;background-repeat:   no-repeat;background-size:cover; background-image:url('. get_bloginfo ( 'template_url' ). '/images/tmp_uploads/'. $file_name.' );"  ></div>';
+                    //echo '<img src = "'. get_bloginfo ( 'template_url' ). "/images/tmp_uploads/". $file_name. '" alt = "" width = "150px" height = "150px" alt="..." >';
 
                     closedir($handle);
 
@@ -41,3 +41,5 @@ if(isset($_FILES['file']['name'])){
 
 }
 
+
+ 

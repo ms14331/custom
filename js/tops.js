@@ -1,18 +1,4 @@
-
-
-
-//Update account jquery
-var genderUpdate;
-$(function () {
-    var $j = jQuery.noConflict();
-    $j(".gender").on('change touchstart', function(){   
- 
-        genderUpdate = $j(this).val();
-    });
-});
- 
-
-
+//Update account page jquery 
 var vals1 = " ";
 var retailTags = " ";
 var donationType = " ";
@@ -42,11 +28,10 @@ var fileDragUpload =" ";
 var listanitem ="";
 
     $(document).ready(function () {
-
-
+ 
          $j = jQuery.noConflict();
         fileDragUpload = document.getElementById('fileDragUpload').value;
-       // var fileDragDropUploadImg = document.getElementById('fileDragDropUploadImg').value;
+        var fileDragDropUploadImg = document.getElementById('fileDragDropUploadImg').value;
         //var fileDragDropUploadImg = document.getElementById('fileDragDropUploadImg').value; 
         var dropzone = document.getElementById('dropzone');
         var listanitem = $("#listanitem").val();
@@ -61,52 +46,17 @@ var listanitem ="";
         $j(".loader1").css({
             "display": "none"
         });
-        // dropzone.ondrop = function(e){
-        //     $j(".loader1").css({
-        //         "display": "block"
-        //     });
-        //     e.preventDefault();
-        //     this.className ='dropzone';
-        //     files_list = e.dataTransfer.files;
-        //     for(x = 0; x < files_list.length; x++){
-        //         formData.append('file[]', files_list[x]);
-        //         //formData.append('post['+x+']', files_list[x]);
-        //     }
-
-        //     e.preventDefault();
-        //     $j.ajax({
-        //         url : fileDragDropUploadImg,
-        //         type: "POST",
-        //         data: formData,
-        //         contentType: false,
-        //         processData: false,
-        //         success: function(data)
-        //         {
-        //             $j('#gallery1').html(data);
-        //             $j(".loader1").css({
-        //                 "display": "none"
-        //             });
-        //             $j("#uploadPhoto").hide(300);
-
-        //         }
-        //     });
-        // };
-
-
-
-        $j('#fileID').change(function (e){
-
-            formData = new FormData();
-            var myFile = $j(this).prop('files');
-
-            for(x = 0; x < myFile.length; x++){
-                formData.append('file[]', myFile[x]);
-            }
-            //alert("hello");
-
-            $j(".loader").css({
+        dropzone.ondrop = function(e){
+            $j(".loader1").css({
                 "display": "block"
             });
+            e.preventDefault();
+            this.className ='dropzone';
+            files_list = e.dataTransfer.files;
+            for(x = 0; x < files_list.length; x++){
+                formData.append('file[]', files_list[x]);
+                //formData.append('post['+x+']', files_list[x]);
+            }
 
             e.preventDefault();
             $j.ajax({
@@ -117,16 +67,47 @@ var listanitem ="";
                 processData: false,
                 success: function(data)
                 {
+                    $j('#gallery1').html(data);
+                    $j(".loader1").css({
+                        "display": "none"
+                    });
+                    $j("#uploadPhoto").hide(300);
 
+                }
+            });
+        }; 
+
+        $j('#fileID').change(function (e){
+
+            formData = new FormData();
+            var myFile = $j(this).prop('files');
+
+            for(x = 0; x < myFile.length; x++){
+                formData.append('file[]', myFile[x]);
+            } 
+            $j(".loader").css({
+                "display": "block"
+            });
+            e.preventDefault(); 
+            $j.ajax({
+                url : fileDragDropUploadImg,
+                type: "POST",
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(data)
+                { 
                     $j('#gallery').html(data);
                     $j(".loader").css({
                         "display": "none"
                     });
-                    $j(".dropzone").hide(300);
-                    //alert("kani");
+                    $j(".dropzone").hide(300); 
                 }
             });
         });
+
+
+
         $j('#uploadForm').on('submit', function(e){
 
 
@@ -194,16 +175,16 @@ var listanitem ="";
                 }
             });
         });
-        // dropzone.ondragover = function(){
-        //     this.className = 'dropzone dragover';
-        //     return false;
-        // };
-        // dropzone.ondragleave = function(){
-        //     this.className = 'dropzone';
-        //     return false;
-        // };
+        dropzone.ondragover = function(){
+            this.className = 'dropzone dragover';
+            return false;
+        };
+        dropzone.ondragleave = function(){
+            this.className = 'dropzone';
+            return false;
+        };
 
-    });
+    }); 
 
 //Check box for the  wear and tear.
 
@@ -243,6 +224,10 @@ $(function () {
         }
     });
 });
+
+
+
+
 var modHeight1;
 $(document).ready(function(){
     var $j = jQuery.noConflict();
@@ -382,23 +367,19 @@ $(document).ready(function(){
 
 
 //Update Account
-
-
+var genderUpdate;
+$(function () {
+    var $j = jQuery.noConflict();
+    $j(".gender").on('change touchstart', function(){    
+        genderUpdate = $j(this).val();
+    });
+});
+ 
 
 
 function changeSelected(elem){
-
-    //elem.preventDefault();
-    var orderID = elem.id;
-
-    //formData = new FormData();
-    //var myFile = $j(this).prop('files');
-    //
-    //for(x = 0; x < myFile.length; x++){
-    //    formData.append('file[]', myFile[x]);
-    //}
-    //
-    //console.log(formData);
+ 
+    var orderID = elem.id; 
 
     if(orderID == 1){
         $('#casualSelect').text("SELECTED");
@@ -414,62 +395,12 @@ function changeSelected(elem){
         $('#streetwearSelect').text("SELECTED");
     }
 
-
-
-
-
-
-
-    //console.log(elem.id);
+ 
 }
 
 
 function updateAccountaaa(){
-
-
-
-
-
-
-
-
-
-
-
-
-    //var first_name = document.getElementById('first_name1').value;
-    //var last_name = document.getElementById('last_name1').value;
-    //var age = document.getElementById('age1').value;
-    //var email = document.getElementById('email1').value;
-    //var mailingAddress = document.getElementById('mailingAddress1').value;
-    //var shirt_name = document.getElementById('shirt_name').value;
-    //var pants = document.getElementById('pants').value;
-    //var shoes_size = document.getElementById('shoes_size').value;
-    //var jacket = document.getElementById('jacket').value;
-    //var listing_brand = document.getElementById('listing_brand').value;
-    //genderUpdate = genderUpdate;
-    //var testDebugging = document.getElementById('testDebugging').value;
-    //var update_registration_account = 'update_registration_account';
-    //var ID = 1;
-    //var post_data = {
-    //    ID               :ID,
-    //    first_name       :first_name,
-    //    last_name        :last_name,
-    //    gender           :genderUpdate,
-    //    age              :age,
-    //    email            :email,
-    //    mailing_address  :mailingAddress,
-    //    shirt            :shirt_name,
-    //    pants            :pants,
-    //    jacket           :jacket,
-    //    shoes            :shoes_size,
-    //    listing_brand    :listing_brand,
-    //    update_registration_account :update_registration_account
-    //}
-    //$.post(testDebugging, post_data )
-    //   .done(function( data ) {
-    //       console.log(data);
-    //   });
+ 
 }
 
  

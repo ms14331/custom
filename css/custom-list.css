@@ -494,6 +494,15 @@
     width:1020px !important;
 }
 /*end of modal css*/
+
+/*update account*/
+.images-profile-updates{
+     border: 1px solid black;
+     height: auto !important;
+     width: auto !important;
+}
+
+
 /*this is for list an item css*/
 .bottoms-hover{
     left: 37px;
@@ -1069,7 +1078,15 @@
     }
 
 }
-@media (max-width: 767px){ 
+@media (max-width: 767px){
+
+
+.new-cosigner-pads{
+    text-align: left;
+}
+
+
+
     .cover-pht-div-img{ 
         margin-top: 144px;
     }

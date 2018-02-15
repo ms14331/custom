@@ -652,7 +652,7 @@ p.brandShortInformation {
 	display:none;
 }
 .panell.actived{
-	display:block;
+	display:block !important;
 }
 .tab_panels .tabs li.actived{
 	border-bottom:5px solid red;

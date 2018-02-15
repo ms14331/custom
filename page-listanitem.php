@@ -465,7 +465,9 @@ positioning-left
 					<div id="uploads"></div>
 					<div class="dropzone" id="dropzone" style=" cursor:pointer; padding-top: 22px;">Drag files here to upload</div>
 					<div id="gallery1" style ="text-align: left;" ></div>
-					<div class="loader1"></div>
+					<div class="loader1"  
+
+					></div>
 			 	</div>
 				<div id="img-output"></div>
 				<br>

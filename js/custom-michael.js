@@ -123,14 +123,19 @@ $(function () {
         $j('.member-tabs').removeClass('active-tab');
     }
 
+
+
+
     $j(".tabs > li").on("click touchstart", function(){
-        var panel = $j(this).attr("rel");
-        $j(".actived").removeClass("actived");
+        var panel = $j(this).attr("rel"); 
+        
+        $j(".activited").removeClass("activited");
+
         $j(".active-underline").removeClass("active-underline");
         $j(this).addClass("active-underline");
         $j(".red").removeClass("red");
-        $j(".active-underline > a").addClass("red");
-        $j("#" + panel).addClass("actived")
+        $j(".active-underline > a").addClass("red"); 
+        $j("#" + panel).addClass("activited");
 
     })
 

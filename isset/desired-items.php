@@ -106,7 +106,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\women\casual";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/women/casual";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -116,7 +116,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\women\casual\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/women/casual/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                 </div>
                             </div> 
@@ -135,7 +135,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\women\chic";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/women/chic";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -145,7 +145,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\women\chic\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/women/chic/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -166,7 +166,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\women\preppy";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/women/preppy";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -176,7 +176,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\women\preppy\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/women/preppy/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -196,7 +196,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\women\street-wear";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/women/street-wear";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -206,7 +206,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\women\street-wear\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/women/street-wear/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -226,7 +226,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\men\casual";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/men/casual";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -236,7 +236,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\men\casual\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/men/casual/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -255,7 +255,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\men\menswear";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/men/menswear";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -265,7 +265,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\men\menswear\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/men/menswear/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -285,7 +285,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\men\preppy";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/men/preppy";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -295,7 +295,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\men\preppy\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/men/preppy/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -314,7 +314,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\men\streetwear";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/men/streetwear";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -324,7 +324,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\men\streetwear\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/men/streetwear/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -342,7 +342,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\home\bedding";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/home/bedding";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -352,7 +352,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\home\bedding\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/home/bedding/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -370,7 +370,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\home\decor";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/home/decor";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -380,7 +380,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\home\decor\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/home/decor/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -400,7 +400,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). "/custom/img/desire-item\home\dinning";    
+                $womenDir = get_theme_root(). "/custom/img/desire-item/home/dinning";    
                 $womenFiles = scandir($womenDir); 
                 $newArg = array_slice($womenFiles ,2);
                 $womensIndex=0;
@@ -410,7 +410,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\home\dinning\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/home/dinning/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -429,7 +429,7 @@
         <div  style = "display:none" class = "btn-wn1 categories clearfix ">  
              <?php 
                 $womenCaption1 = array("TOPS","BOTTOMS","DRESSES","JEANS","SUITING","OUTERWEAR");
-                $womenDir = get_theme_root(). '/custom/img/desire-item\home\furniture';   
+                $womenDir = get_theme_root(). '/custom/img/desire-item/home/furniture';   
 
 
                 $womenFiles = scandir($womenDir); 
@@ -441,7 +441,7 @@
                         ?>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 <?php if($womensIndex%3==2){ echo 'modulo-of-3-item-type'; } ?> " style="margin-bottom: 15px;padding-left: 0px; ">
                             <div class="view overlay hm-red-strong">
-                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item\home\furniture\<?php echo $value; ?>" class="img-fluid " alt="">
+                                <img src="<?php echo get_bloginfo('template_url');?>/img/desire-item/home/furniture/<?php echo $value; ?>" class="img-fluid " alt="">
                                 <div class="mask flex-center waves-effect waves-light"> 
                                 </div>
                             </div> 
@@ -454,12 +454,14 @@
         </div> 
 
     </div>
-
+</div>
 
  
-    <div class="col-sm-4 col-md-offset-4 clearfix"  style="margin-bottom:  50px;">
+    <div class="col-md-4 col-md-offset-4 clearfix cosing-now-desired-item-btn"  style="font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;margin-bottom:  50px;margin-top: 20px;">
         <a href="new-consign" class = "footer-cosign-des" >
             COSIGN NOW
         </a>
     </div>  
  
+
+ <div class="clearfix"></div>
